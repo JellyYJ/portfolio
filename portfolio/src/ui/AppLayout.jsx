@@ -12,16 +12,36 @@ const StyledAppLayout = styled.div`
 `;
 
 const Main = styled.main`
-  background-color: var(--color-brown-50);
-  padding: 4rem 4.5rem 6.5rem;
+  background-color: var(--color-grey-0);
+  padding: 4rem 5rem 6rem;
+
+  @media (max-width: 512px) {
+    padding: 1rem 2rem 3rem;
+  }
 `;
 
 const Container = styled.div`
-  max-width: 130rem;
-  margin: 0 auto;
+  max-width: 120rem;
+  margin: 8rem auto;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  transition: margin 0.3s ease;
+
+  @media (max-width: 1080px) {
+    margin: 8rem 5rem;
+    gap: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    margin: 4rem 2rem;
+    gap: 2rem;
+  }
+
+  @media (max-width: 512px) {
+    margin: 2rem 1rem;
+    gap: 1rem;
+  }
 `;
 
 function AppLayout() {
