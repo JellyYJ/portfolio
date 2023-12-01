@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import MainNav from "./MainNav";
 
 const StyledHeader = styled.header`
   background-color: var(--color-brown-0);
@@ -7,7 +8,11 @@ const StyledHeader = styled.header`
 `;
 
 function Header() {
-  return <StyledHeader>HEADER</StyledHeader>;
+  return (
+    <StyledHeader>
+      <MainNav></MainNav>
+    </StyledHeader>
+  );
 }
 
 export default Header;
