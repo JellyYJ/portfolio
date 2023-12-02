@@ -20,25 +20,21 @@ const Main = styled.main`
 `;
 
 const Container = styled.div`
-  max-width: 120rem;
-  margin: 6rem auto;
+  max-width: 140rem;
+  margin: 8rem auto;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
   transition: margin 0.3s ease;
-
-  @media (max-width: 1080px) {
-    margin: 6rem 5rem;
-    gap: 3rem;
-  }
+  /* background-color: var(--color-grey-400); */
 
   @media (max-width: 768px) {
-    margin: 4rem 2rem;
-    gap: 2rem;
+    margin-top: 4rem;
   }
 
   @media (max-width: 512px) {
-    margin: 3rem 1rem;
+    margin-top: 2rem;
+    max-width: 100%;
     gap: 1rem;
   }
 `;

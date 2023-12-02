@@ -4,13 +4,9 @@ import ProjectsList from "../ui/ProjectsList";
 
 function Projects() {
   return (
-    <>
-      <Heading as="h1">Projects.</Heading>
-
-      <Row type="horizontal">
-        <ProjectsList></ProjectsList>
-      </Row>
-    </>
+    <Row type="horizontal">
+      <ProjectsList />
+    </Row>
   );
 }
 

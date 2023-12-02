@@ -52,18 +52,18 @@ function AboutMe() {
 
   return (
     <Row>
-      <Heading as="h1">{greeting}.</Heading>
-      <StyledDiv role="paragraph">
-        Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on
-        experience in <strong>full-stack web development</strong> and
-        <strong> machine learning</strong> projects. I'm eager to contribute my
-        passion and skills to real-world projects.
-      </StyledDiv>
+      <Row fontSize="2rem" spacing="5rem" maxWidth="70rem">
+        <Heading as="h1">{greeting}.</Heading>
+        <p>
+          Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on
+          experience in <strong>full-stack web development</strong> and
+          <strong> machine learning</strong> projects. I'm eager to contribute
+          my passion and skills to real-world projects.
+        </p>
+      </Row>
 
-      <StyledDiv role="skillBucket">
-        <Heading as="h2">My Skill Bucket</Heading>
-        <SkillIcons skillsData={skillsData} />
-      </StyledDiv>
+      <Heading as="h2">My Skill Bucket</Heading>
+      <SkillIcons skillsData={skillsData} />
     </Row>
   );
 }

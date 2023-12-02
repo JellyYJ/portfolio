@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 const StyledDiv = styled.div`
   max-width: 60rem;
+  /* margin: auto; */
 
   ${(props) =>
     props.role === "paragraph" &&
