@@ -41,18 +41,7 @@ const projectsData = [
 const ProjectsListContainer = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-`;
-
-const ProjectListItem = styled.li`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-bottom: 8rem;
-
-  @media (max-width: 1080px) {
-    flex-direction: column;
-  }
+  gap: 3rem;
 `;
 
 const ProjectImage = styled.img`
@@ -60,12 +49,43 @@ const ProjectImage = styled.img`
   height: auto;
   border-radius: 8px;
   margin-right: 4rem;
-  transition: width 0.3s ease;
+  transition: transform 0.3s ease;
 
-  @media (max-width: 768px) {
-    width: 100%; /* Make the image take full width on smaller screens */
-    margin-right: 0; /* Remove right margin for smaller screens */
-    margin-bottom: 2rem; /* Add some spacing between image and text on smaller screens */
+  @media (max-width: 1080px) {
+    width: 60rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 687px) {
+    width: 50rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+`;
+
+const ProjectListItem = styled.li`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 8rem;
+  transition: margin-bottom 0.5s ease;
+  background-color: var(--color-grey-0);
+
+  &:hover {
+    ${ProjectImage} {
+      transform: translateY(-10px); /* Move the image up by 10 pixels */
+    }
+
+    ${Heading} {
+      text-decoration: underline; /* Underline the heading */
+    }
+  }
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
   }
 `;
 
@@ -77,6 +97,8 @@ const ProjectDescription = styled(StyledDiv)`
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 `;
+
+// Rest of the code remains unchanged
 
 function ProjectsList() {
   return (
