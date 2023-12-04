@@ -18,17 +18,14 @@ const CollapseDiv = styled.div`
 
 const ToggleButton = styled.button`
   border-radius: 0.8rem;
-  background-color: var(--color-brown-300);
-  color: white;
+  background-color: var(--color-brown-0);
+  color: var(--color-brown-400);
   padding: 1rem;
+  font-size: 2rem;
   border: none;
   cursor: pointer;
   position: absolute;
   /* z-index: 2; */
-
-  &:hover {
-    background-color: var(--color-brown-400);
-  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -75,25 +72,25 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 function CollpaseMainNav({ navData }) {
-  const [isCollapse, setIsCollapse] = useState(true);
+  const [isCollapse, setIsCollapse] = useState(false);
   const collapseRef = useDetectClickOutside(() => setIsCollapse(false));
 
   const toggle = () => setIsCollapse(!isCollapse);
   const hide = () => setIsCollapse(false);
 
   return (
-    <>
-      <ToggleButton onClick={toggle} ref={collapseRef}>
+    <div ref={collapseRef}>
+      <ToggleButton onClick={toggle}>
         <IoMdMenu />
       </ToggleButton>
-      <CollapseDiv isCollapse={isCollapse} ref={collapseRef}>
+      <CollapseDiv isCollapse={isCollapse}>
         {navData.map((nav) => (
           <StyledNavLink to={nav.to} key={nav.name} onClick={hide}>
             {nav.name}
           </StyledNavLink>
         ))}
       </CollapseDiv>
-    </>
+    </div>
   );
 }
 
