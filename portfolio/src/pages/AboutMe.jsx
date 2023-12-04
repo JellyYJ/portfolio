@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
-import StyledDiv from "../ui/Paragraph";
 import SkillIcons from "../ui/SkillIcons";
 
 import { FaHtml5 } from "react-icons/fa";
@@ -11,8 +10,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaJava } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
-const iconSize = 38;
+const iconSize = 36;
 
 const skillsData = [
   { name: "HTML", icon: <FaHtml5 size={iconSize} />, color: "#E44D26" },
@@ -25,7 +25,12 @@ const skillsData = [
   },
   { name: "Java", icon: <FaJava size={iconSize} />, color: "#007396" },
   { name: "Node.js", icon: <FaNodeJs size={iconSize} />, color: "#339933" },
-  { name: "Python", icon: <FaPython size={iconSize} />, color: "#3776AB" },
+  { name: "Python", icon: <FaPython size={iconSize} />, color: "#0ea5e9" },
+  {
+    name: "Tailwind",
+    icon: <SiTailwindcss size={iconSize} />,
+    color: "#3776AB",
+  },
 ];
 
 function AboutMe() {

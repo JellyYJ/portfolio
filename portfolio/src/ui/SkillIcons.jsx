@@ -1,20 +1,24 @@
 import styled from "styled-components";
 
 const IconField = styled.div`
-  max-width: 60rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3.5rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 2rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  }
 `;
 
 const SkillCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: var(--color-brown-0); */
-  border-radius: 9px;
-  transition: background-color 0.3s ease;
+  display: grid;
+  transition: color 0.3s ease;
+  justify-items: center;
 
   &:hover {
     color: ${({ bgColor }) => bgColor};

@@ -13,21 +13,25 @@ const StyledNavLink = styled(NavLink)`
     display: flex;
     align-items: center;
     gap: 1.2rem;
+    background: linear-gradient(var(--color-grey-400), var(--color-grey-400))
+      bottom / 0 0.1em no-repeat;
+    transition: all 0.3s;
 
     color: var(--color-grey-600);
     font-size: 1.6rem;
     font-weight: 500;
     padding: 1.2rem 2.4rem;
-    transition: all 0.3s;
   }
 
-  /* This works because react-router places the active class on the active NavLink */
-  &:hover,
+  &:hover {
+    background-size: 100% 0.1em;
+  }
+
   &:active,
   &.active:link,
   &.active:visited {
     color: var(--color-grey-800);
-    background-color: var(--color-grey-50);
+    background-color: var(--color-brown-100);
     border-radius: var(--border-radius-sm);
   }
 

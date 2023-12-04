@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
-import Row from "./Row";
 
 const projectsData = [
   {
@@ -51,13 +50,13 @@ const ProjectImage = styled.img`
   margin-right: 4rem;
   transition: transform 0.3s ease;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1024px) {
     width: 60rem;
     margin-right: 0;
     margin-bottom: 2rem;
   }
 
-  @media (max-width: 687px) {
+  @media (max-width: 768px) {
     width: 50rem;
     margin-right: 0;
     margin-bottom: 2rem;
@@ -82,7 +81,7 @@ const ProjectListItem = styled.li`
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;

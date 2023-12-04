@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const Row = styled.div`
   display: flex;
-  /* flex: 1; */
+  flex: 1;
   margin: auto;
   max-width: ${(props) => props.maxWidth || "120rem"};
   margin-bottom: ${(props) => props.spacing || "0"};
