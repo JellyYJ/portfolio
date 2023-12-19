@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const IconField = styled.div`
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-  gap: 2rem;
+  gap: 3rem;
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
@@ -17,7 +17,7 @@ const IconField = styled.div`
 
 const SkillCard = styled.div`
   display: grid;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
   justify-items: center;
 
   &:hover {

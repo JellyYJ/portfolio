@@ -7,10 +7,6 @@ const Row = styled.div`
   max-width: ${(props) => props.maxWidth || "120rem"};
   margin-bottom: ${(props) => props.spacing || "0"};
 
-  p {
-    font-size: ${(props) => props.fontSize || "1rem"};
-  }
-
   ${(props) =>
     props.type === "horizontal" &&
     css`

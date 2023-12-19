@@ -11,6 +11,7 @@ import { FaJava } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import styled from "styled-components";
 
 const iconSize = 36;
 
@@ -32,6 +33,25 @@ const skillsData = [
     color: "#3776AB",
   },
 ];
+
+const StyledGreetingsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+
+  p {
+    font-size: ${(props) => props.fontSize || "1rem"};
+    margin-top: 1rem;
+  }
+`;
+
+const StyledSkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 70rem;
+`;
 
 function AboutMe() {
   const [curTime, setCurTime] = useState(new Date());
@@ -56,8 +76,8 @@ function AboutMe() {
   }
 
   return (
-    <Row>
-      <Row fontSize="2rem" spacing="5rem" maxWidth="90rem">
+    <>
+      <StyledGreetingsContainer fontSize="2rem">
         <Heading as="h1">{greeting}.</Heading>
         <p>
           Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on
@@ -65,11 +85,13 @@ function AboutMe() {
           <strong> machine learning</strong> projects. I'm eager to contribute
           my passion and skills to real-world projects.
         </p>
-      </Row>
+      </StyledGreetingsContainer>
 
-      <Heading as="h2">My Skill Bucket</Heading>
-      <SkillIcons skillsData={skillsData} />
-    </Row>
+      <StyledSkillsContainer>
+        <Heading as="h2">My Skill Bucket</Heading>
+        <SkillIcons skillsData={skillsData} />
+      </StyledSkillsContainer>
+    </>
   );
 }
 
