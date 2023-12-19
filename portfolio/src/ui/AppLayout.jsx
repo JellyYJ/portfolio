@@ -29,11 +29,10 @@ const Container = styled.div`
   /* background-color: var(--color-grey-400); */
 
   @media (max-width: 1024px) {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 
   @media (max-width: 768px) {
-    /* margin-top: 2rem; */
     max-width: 100%;
     gap: 1rem;
   }
