@@ -57,7 +57,7 @@ function AboutMe() {
 
   return (
     <Row>
-      <Row fontSize="2rem" spacing="5rem" maxWidth="70rem">
+      <Row fontSize="2rem" spacing="5rem" maxWidth="90rem">
         <Heading as="h1">{greeting}.</Heading>
         <p>
           Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on

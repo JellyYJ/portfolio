@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Heading from "./Heading";
+import Row from "./Row";
 
 const IconField = styled.div`
   margin-top: 1rem;
@@ -25,7 +27,7 @@ const SkillCard = styled.div`
   }
 `;
 
-function SkillIcons({ skillsData }) {
+export default function SkillIcons({ skillsData }) {
   return (
     <IconField>
       {skillsData.map((skill, index) => (
@@ -37,5 +39,3 @@ function SkillIcons({ skillsData }) {
     </IconField>
   );
 }
-
-export default SkillIcons;

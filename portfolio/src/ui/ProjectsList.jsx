@@ -12,7 +12,7 @@ const projectsData = [
     techStck: ["JavaScript", "React,", "Node.jS", "MongoDB", "CSS"],
   },
   {
-    name: "Holidy Cabin",
+    name: "Holiday Cabin",
     img: "",
     details: "",
     techStck: ["JavaScript", "React,", "Supabase", "Styled Components"],
