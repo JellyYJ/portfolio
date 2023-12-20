@@ -1,11 +1,12 @@
-import Row from "../ui/Row";
 import ProjectsList from "../ui/ProjectsList";
+import Heading from "../ui/Heading";
 
 function Projects() {
   return (
-    <Row>
+    <>
+      <Heading as="h1">Projects.</Heading>
       <ProjectsList />
-    </Row>
+    </>
   );
 }
 

@@ -13,7 +13,7 @@ const projectsData = [
   },
   {
     name: "Holiday Cabin",
-    img: "",
+    img: "src/assets/worldWise.png",
     details: "",
     techStck: ["JavaScript", "React,", "Supabase", "Styled Components"],
   },
@@ -39,36 +39,46 @@ const projectsData = [
 
 const ProjectsListContainer = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  gap: 3rem;
+  /* max-width: 110rem; */
+  margin-top: 8rem;
+  gap: 10rem;
+  padding: 0 16px;
+
+  @media (max-width: 1240px) {
+    /* background-color: aquamarine; */
+    margin-top: 3rem;
+  }
 `;
 
 const ProjectImage = styled.img`
-  width: 60rem;
+  width: 80rem;
   height: auto;
-  border-radius: 8px;
-  margin-right: 4rem;
-  transition: transform 0.3s ease;
+  border-radius: 1.5rem;
+  margin-right: 5rem;
+
+  @media (max-width: 1240px) {
+    width: 65rem;
+  }
 
   @media (max-width: 1024px) {
-    width: 60rem;
+    width: 65rem;
     margin-right: 0;
     margin-bottom: 2rem;
   }
 
-  @media (max-width: 768px) {
-    width: 50rem;
+  @media (max-width: 795px) {
+    width: 100%;
     margin-right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
 const ProjectListItem = styled.li`
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  margin-bottom: 8rem;
-  transition: margin-bottom 0.5s ease;
+  align-items: center;
   background-color: var(--color-grey-0);
 
   &:hover {
@@ -83,8 +93,6 @@ const ProjectListItem = styled.li`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 5rem;
   }
 `;
 
@@ -97,18 +105,15 @@ const ProjectDescription = styled(StyledDiv)`
   margin-bottom: 1.5rem;
 `;
 
-// Rest of the code remains unchanged
-
 function ProjectsList() {
   return (
     <ProjectsListContainer>
-      <Heading as="h1">Projects.</Heading>
       {projectsData.map((project) => (
         // <Row type="horizontal" spacing="5rem" key={project.name}></Row>
         <ProjectListItem key={project.name}>
           <ProjectImage src={project.img} alt={project.name} />
           <ProjectDetails>
-            <Heading as="h2">{project.name}</Heading>
+            <Heading as="h3">{project.name}</Heading>
             <ProjectDescription>{project.details}</ProjectDescription>
             <TechStack techData={project.techStck} />
           </ProjectDetails>

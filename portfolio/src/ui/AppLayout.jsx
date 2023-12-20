@@ -24,17 +24,14 @@ const Container = styled.div`
   margin: 8rem auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3.2rem;
   transition: margin 0.3s ease;
   /* background-color: var(--color-grey-400); */
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1080px) {
     margin-top: 6rem;
-  }
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-    gap: 1rem;
+    max-width: 90rem;
   }
 `;
 
