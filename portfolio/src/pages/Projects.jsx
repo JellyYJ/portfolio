@@ -3,7 +3,7 @@ import ProjectsList from "../ui/ProjectsList";
 
 function Projects() {
   return (
-    <Row type="horizontal">
+    <Row>
       <ProjectsList />
     </Row>
   );

@@ -39,7 +39,6 @@ const StyledGreetingsContainer = styled.div`
   flex-direction: column;
   max-width: 90rem;
   margin-bottom: 3rem;
-  margin-top: 3rem;
 
   p {
     font-size: ${(props) => props.fontSize || "1rem"};
@@ -76,7 +75,7 @@ function AboutMe() {
   }
 
   return (
-    <>
+    <Row>
       <StyledGreetingsContainer fontSize="2rem">
         <Heading as="h1">{greeting}.</Heading>
         <p>
@@ -91,7 +90,7 @@ function AboutMe() {
         <Heading as="h2">My Skill Bucket</Heading>
         <SkillIcons skillsData={skillsData} />
       </StyledSkillsContainer>
-    </>
+    </Row>
   );
 }
 

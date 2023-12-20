@@ -12,7 +12,7 @@ const StyledAppLayout = styled.div`
 
 const Main = styled.main`
   background-color: var(--color-grey-0);
-  padding: 4rem 5rem 6rem;
+  padding: 5rem 6rem 8rem;
 
   @media (max-width: 512px) {
     padding: 1rem 2rem 3rem;
