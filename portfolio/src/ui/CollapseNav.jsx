@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import { IoMdMenu } from "react-icons/io";
-import useDetectClickOutside from "../hooks/useDetectClickOutside";
+import { useDetectClickOutside } from "../hooks/useDetectClickOutside";
 
 const CollapseDiv = styled.div`
   display: ${({ isCollapse }) => (isCollapse ? "block" : "none")};

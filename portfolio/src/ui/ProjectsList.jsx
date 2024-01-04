@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
@@ -7,6 +9,7 @@ const projectsData = [
   {
     name: "Holiday Cabin",
     img: "src/assets/worldWise.png",
+    link: "/holidayCabin",
     details:
       "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
     techStck: ["JavaScript", "React", "Supabase", "Styled Components"],
@@ -14,6 +17,7 @@ const projectsData = [
   {
     name: "Solar Offset",
     img: "src/assets/pizzaCo.png",
+    link: "/solarOffset",
     details:
       "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
     techStck: ["JavaScript", "React", "Node.jS", "MongoDB", "CSS"],
@@ -21,6 +25,7 @@ const projectsData = [
   {
     name: "Bird Sighting",
     img: "",
+    link: "/birdSighting",
     details:
       "Uni project: allowing bird lovers to upload and view sightings of birds, also support offline and online real-time chatting, the chat history will be syncced once the user is connected to the internet.",
     techStck: ["JavaScript", "Node.jS", "MongoDB", "CSS"],
@@ -28,6 +33,7 @@ const projectsData = [
   {
     name: "React Lizza.co",
     img: "src/assets/pizzaCo.png",
+    link: "/reactPizza",
     details:
       "This project is a practice project for learning React and Tailwind.",
     techStck: ["JavaScript", "React,", "Tailwind"],
@@ -35,12 +41,14 @@ const projectsData = [
   {
     name: "Heartbeat Classification",
     img: "",
+    link: "/heartbeatClassification",
     details: "",
     techStck: ["Python", "Numpy", "Matoplot", "PyTorch", "TensorFlow"],
   },
   {
     name: "Step Counter",
     img: "",
+    link: "/stepCounter",
     details: "",
     techStck: ["Java"],
   },
@@ -118,15 +126,16 @@ function ProjectsList() {
   return (
     <ProjectsListContainer>
       {projectsData.map((project) => (
-        // <Row type="horizontal" spacing="5rem" key={project.name}></Row>
-        <ProjectListItem key={project.name}>
-          <ProjectImage src={project.img} alt={project.name} />
-          <ProjectDetails>
-            <Heading as="h3">{project.name}</Heading>
-            <ProjectDescription>{project.details}</ProjectDescription>
-            <TechStack techData={project.techStck} />
-          </ProjectDetails>
-        </ProjectListItem>
+        <Link to={`/projects${project.link}`} key={project.name}>
+          <ProjectListItem key={project.name}>
+            <ProjectImage src={project.img} alt={project.name} />
+            <ProjectDetails>
+              <Heading as="h3">{project.name}</Heading>
+              <ProjectDescription>{project.details}</ProjectDescription>
+              <TechStack techData={project.techStck} />
+            </ProjectDetails>
+          </ProjectListItem>
+        </Link>
       ))}
     </ProjectsListContainer>
   );

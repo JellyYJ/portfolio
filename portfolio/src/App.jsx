@@ -8,6 +8,7 @@ import ContactMe from "./pages/ContactMe";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import PageNotFound from "./pages/PageNotFound";
+import HolidayCabinDetail from "./pages/projectPages/HolidayCabin";
 
 function App() {
   return (
@@ -31,7 +32,11 @@ function App() {
             <Route index element={<Navigate replace to="aboutMe" />} />
             <Route element={<AboutMe />} path="aboutMe" />
             <Route element={<Projects />} path="projects" />
-            <Route element={<Project />} path="projects/:project" />
+            {/* <Route element={<Project />} path="projects/:project" /> */}
+            <Route
+              element={<HolidayCabinDetail />}
+              path="projects/holidayCabin"
+            />
             <Route element={<ContactMe />} path="contactMe" />
           </Route>
           <Route path="*" element={<PageNotFound />} />
