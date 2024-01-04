@@ -1,28 +1,35 @@
-import Row from "../ui/Row";
 import Heading from "../ui/Heading";
+import styled from "styled-components";
 
-function Contact() {
+const StyledGreetingsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  margin-bottom: 3rem;
+
+  p {
+    font-size: ${(props) => props.fontSize || "1rem"};
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 1240px) {
+    background-color: aquamarine;
+    margin-top: 3rem;
+  }
+`;
+
+function ContactMe() {
   return (
-    <Row>
-      <Heading as="h1">Contact.</Heading>
-      <Row fontSize="2rem" spacing="5rem" maxWidth="70rem">
-        <Heading as="h3">Hello~</Heading>
-        <Heading as="h3">I'm Yijia Liu</Heading>
-        <Row>
-          <Heading as="h2">Notice Period</Heading>
-          <p>
-            Can start working from <strong>Jan. 2023</strong>
-          </p>
-        </Row>
-        <Row>
-          <Heading as="h2">Contact ME</Heading>
-          <p>
-            Can start working from <strong>Jan. 2023</strong>
-          </p>
-        </Row>
-      </Row>
-    </Row>
+    <>
+      <StyledGreetingsContainer fontSize="2rem">
+        <Heading as="h1">Contact.</Heading>
+        <p>Please contact me by email: LYJ10000H@gmail.com</p>
+        <p>
+          I can start working from <strong>Jan. 2023</strong>
+        </p>
+      </StyledGreetingsContainer>
+    </>
   );
 }
 
-export default Contact;
+export default ContactMe;

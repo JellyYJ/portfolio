@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Heading from "../ui/Heading";
-import Row from "../ui/Row";
 import SkillIcons from "../ui/SkillIcons";
 
 import { FaHtml5 } from "react-icons/fa";
@@ -12,6 +11,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const iconSize = 36;
 
@@ -44,12 +44,18 @@ const StyledGreetingsContainer = styled.div`
     font-size: ${(props) => props.fontSize || "1rem"};
     margin-top: 1rem;
   }
+
+  @media (max-width: 1240px) {
+    /* background-color: aquamarine; */
+    margin-top: 3rem;
+  }
 `;
 
 const StyledSkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 70rem;
+  margin-top: 5rem;
 `;
 
 function AboutMe() {
@@ -75,7 +81,7 @@ function AboutMe() {
   }
 
   return (
-    <Row>
+    <>
       <StyledGreetingsContainer fontSize="2rem">
         <Heading as="h1">{greeting}.</Heading>
         <p>
@@ -84,13 +90,22 @@ function AboutMe() {
           <strong> machine learning</strong> projects. I'm eager to contribute
           my passion and skills to real-world projects.
         </p>
-      </StyledGreetingsContainer>
+        <Link to="/contactMe">Learn more about me.</Link>
 
-      <StyledSkillsContainer>
-        <Heading as="h2">My Skill Bucket</Heading>
-        <SkillIcons skillsData={skillsData} />
-      </StyledSkillsContainer>
-    </Row>
+        <StyledSkillsContainer>
+          <Heading as="h2">My Skill Bucket</Heading>
+          <SkillIcons skillsData={skillsData} />
+        </StyledSkillsContainer>
+
+        <StyledSkillsContainer>
+          <Heading as="h2">Contact Me</Heading>
+          <p>
+            Please contact me by email: LYJ10000H@gmail.com. I can start working
+            from <strong>Jan. 2023</strong>
+          </p>
+        </StyledSkillsContainer>
+      </StyledGreetingsContainer>
+    </>
   );
 }
 
