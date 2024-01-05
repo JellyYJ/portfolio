@@ -1,21 +1,17 @@
+import React from "react";
+import ProjectDetail from "../ui/projectDetail";
 import { useParams } from "react-router-dom";
+import projectsData from "../assets/projectData.json";
 
-function Project({ projectsData }) {
+const Project = () => {
+  console.log("Hi");
+
   const { projectName } = useParams();
+  const project = projectsData.find((p) => p.link === `/${projectName}`);
 
-  // Find the project with the matching name
-  const project = projectsData.find((p) => p.name === projectName);
+  console.log(project);
 
-  if (!project) {
-    return <div>Project not found</div>;
-  }
-
-  return (
-    <div>
-      <h1>{project.name}</h1>
-      <p>{project.details}</p>
-    </div>
-  );
-}
+  return <ProjectDetail project={project} />;
+};
 
 export default Project;

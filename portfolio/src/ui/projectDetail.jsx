@@ -1,16 +1,16 @@
 import React from "react";
-import Heading from "../../ui/Heading";
-import StyledDiv from "../../ui/Paragraph";
-import TechStack from "../../ui/TechStack";
-import Button from "../../ui/Button";
+import Heading from "./Heading";
+import StyledDiv from "./Paragraph";
+import TechStack from "./TechStack";
+import Button from "./Button";
 
-import { useMoveBack } from "../../hooks/useMoveBack";
+import { useMoveBack } from "../hooks/useMoveBack";
 
 function ProjectDetail({ project }) {
   const moveBack = useMoveBack();
 
   return (
-    <div>
+    <>
       <Button variation="secondary" onClick={moveBack}>
         Back
       </Button>
@@ -19,7 +19,7 @@ function ProjectDetail({ project }) {
         {project.details}
       </StyledDiv>
       <TechStack techData={project.techStck} />
-    </div>
+    </>
   );
 }
 
