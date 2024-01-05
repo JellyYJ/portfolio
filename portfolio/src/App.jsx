@@ -15,31 +15,19 @@ function App() {
     <>
       <GlobalStyles />
       <BrowserRouter>
-        {/* <Routes>
+        <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Navigate replace to="aboutMe"></Navigate>} />
             <Route element={<AboutMe />} path="aboutMe" />
             <Route element={<Projects />} path="projects" />
             <Route element={<Project />} path="projects/:project" />
-            <Route element={<ContactMe />} path="contactMe" />
-          </Route>
-
-          <Route element={<PageNotFound />} path="*" />
-        </Routes> */}
-
-        <Routes>
-          <Route path="/" element={<AppLayout />}>
-            <Route index element={<Navigate replace to="aboutMe" />} />
-            <Route element={<AboutMe />} path="aboutMe" />
-            <Route element={<Projects />} path="projects" />
-            {/* <Route element={<Project />} path="projects/:project" /> */}
             <Route
               element={<HolidayCabinDetail />}
               path="projects/holidayCabin"
             />
             <Route element={<ContactMe />} path="contactMe" />
           </Route>
-          <Route path="*" element={<PageNotFound />} />
+          <Route element={<PageNotFound />} path="*" />
         </Routes>
       </BrowserRouter>
     </>
