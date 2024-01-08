@@ -4,8 +4,6 @@ import { useParams } from "react-router-dom";
 import projectsData from "../assets/projectData.json";
 
 const Project = () => {
-  console.log("Hi");
-
   const { projectName } = useParams();
   const project = projectsData.find((p) => p.link === `/${projectName}`);
 

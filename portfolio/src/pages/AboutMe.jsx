@@ -10,8 +10,9 @@ import { FaJava } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import TextContainer from "../ui/TextContainer";
 
 const iconSize = 36;
 
@@ -33,23 +34,6 @@ const skillsData = [
     color: "#3776AB",
   },
 ];
-
-const StyledGreetingsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 90rem;
-  margin-bottom: 3rem;
-
-  p {
-    font-size: ${(props) => props.fontSize || "1rem"};
-    margin-top: 1rem;
-  }
-
-  @media (max-width: 1240px) {
-    /* background-color: aquamarine; */
-    margin-top: 3rem;
-  }
-`;
 
 const StyledSkillsContainer = styled.div`
   display: flex;
@@ -82,7 +66,7 @@ function AboutMe() {
 
   return (
     <>
-      <StyledGreetingsContainer fontSize="2rem">
+      <TextContainer fontSize="2rem">
         <Heading as="h1">{greeting}.</Heading>
         <p>
           Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on
@@ -104,7 +88,7 @@ function AboutMe() {
             from <strong>Jan. 2023</strong>
           </p>
         </StyledSkillsContainer>
-      </StyledGreetingsContainer>
+      </TextContainer>
     </>
   );
 }
