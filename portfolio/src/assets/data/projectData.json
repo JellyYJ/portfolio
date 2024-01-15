@@ -16,7 +16,20 @@
     "summary": "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
     "techStck": ["JavaScript", "React", "Node.jS", "MongoDB", "CSS"],
     "details": "",
-    "img2": "/src/assets/solarPay.gif"
+    "gifs": [
+      {
+        "gif": "/src/assets/solarPay.gif",
+        "explanation": "explain1explain1explain1explain1"
+      },
+      {
+        "gif": "/src/assets/solarPay.gif",
+        "explanation": "explain2explain2explain2explain2"
+      },
+      {
+        "gif": "/src/assets/solarPay.gif",
+        "explanation": "explain3explain3explain3explain3"
+      }
+    ]
   },
   {
     "name": "Bird Sighting",

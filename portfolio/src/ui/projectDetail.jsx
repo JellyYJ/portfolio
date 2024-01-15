@@ -165,43 +165,17 @@ function ProjectDetail({ project }) {
       </StyledDiv> */}
 
       <GifsContainer>
-        <GifContainer>
-          <Gif src={project.img2} alt="Checkout GIF" />
-          <ExplanationContainer>
-            <StyledDiv>
-              <strong>Checkout / Payment Walkthrough</strong>
-            </StyledDiv>
-            <p>
-              Provide a brief explanation or details about the checkout/payment
-              walkthrough here.
-            </p>
-          </ExplanationContainer>
-        </GifContainer>
-
-        <GifContainer>
-          <Gif src={project.img2} alt="Login GIF" />
-          <ExplanationContainer>
-            <StyledDiv>
-              <strong>Checkout / Payment Walkthrough</strong>
-            </StyledDiv>
-            <StyledDiv>
-              Provide a brief explanation or details about the checkout/payment
-              walkthrough here.
-            </StyledDiv>
-          </ExplanationContainer>
-        </GifContainer>
-
-        <GifContainer>
-          <Gif src={project.img2} alt="Other GIF" />
-          <ExplanationContainer>
-            <StyledDiv>
-              <strong>Other Feature</strong>
-            </StyledDiv>
-            <StyledDiv>
-              Describe another feature or aspect of your project.
-            </StyledDiv>
-          </ExplanationContainer>
-        </GifContainer>
+        {project?.gifs?.map((gifInfo, index) => (
+          <GifContainer key={index}>
+            <Gif src={gifInfo.gif} alt={`GIF ${index + 1}`} />
+            <ExplanationContainer>
+              <StyledDiv>
+                <strong>Explanation {index + 1}</strong>
+              </StyledDiv>
+              <p>{gifInfo.explanation}</p>
+            </ExplanationContainer>
+          </GifContainer>
+        ))}
       </GifsContainer>
 
       {project.features && (
