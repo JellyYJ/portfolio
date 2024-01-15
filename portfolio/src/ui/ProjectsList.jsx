@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import projectsData from "../assets/projectData.json";
+import projectsData from "../assets/data/projectData.json";
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
@@ -64,7 +64,6 @@ const ProjectsListContainer = styled.ul`
   padding: 0 16px;
 
   @media (max-width: 1240px) {
-    /* background-color: aquamarine; */
     margin-top: 3rem;
   }
 `;
@@ -131,7 +130,7 @@ function ProjectsList() {
             <ProjectImage src={project.img} alt={project.name} />
             <ProjectDetails>
               <Heading as="h3">{project.name}</Heading>
-              <ProjectDescription>{project.details}</ProjectDescription>
+              <ProjectDescription>{project.summary}</ProjectDescription>
               <TechStack techData={project.techStck} />
             </ProjectDetails>
           </ProjectListItem>

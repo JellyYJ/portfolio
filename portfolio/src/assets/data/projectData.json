@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Holiday Cabin",
+    "date": "2023 Nov-Dec",
+    "img": "/src/assets/worldWise.png",
+    "link": "/holidayCabin",
+    "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
+    "techStck": ["JavaScript", "React", "Supabase", "Styled Components"],
+    "details": "",
+    "projectLink": "https://dictionary.cambridge.org/dictionary/english/web"
+  },
+  {
+    "name": "Solar Offset",
+    "img": "/src/assets/solarLandingPage.png",
+    "link": "/solarOffset",
+    "summary": "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
+    "techStck": ["JavaScript", "React", "Node.jS", "MongoDB", "CSS"],
+    "details": "",
+    "img2": "/src/assets/solarPay.gif"
+  },
+  {
+    "name": "Bird Sighting",
+    "img": "",
+    "link": "/birdSighting",
+    "summary": "Uni project: allowing bird lovers to upload and view sightings of birds, also support offline and online real-time chatting, the chat history will be syncced once the user is connected to the internet.",
+    "techStck": ["JavaScript", "Node.jS", "MongoDB", "CSS"],
+    "details": ""
+  },
+  {
+    "name": "React Lizza.co",
+    "img": "/src/assets/pizzaCo.png",
+    "link": "/reactPizza",
+    "summary": "This project is a practice project for learning React and Tailwind.",
+    "techStck": ["JavaScript", "React,", "Tailwind"],
+    "details": ""
+  },
+  {
+    "name": "Heartbeat Classification",
+    "img": "",
+    "link": "/heartbeatClassification",
+    "summary": "",
+    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "details": ""
+  },
+  {
+    "name": "Step Counter",
+    "img": "",
+    "link": "/stepCounter",
+    "summary": "",
+    "techStck": ["Java"],
+    "details": ""
+  }
+]
