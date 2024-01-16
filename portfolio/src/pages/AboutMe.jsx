@@ -42,6 +42,17 @@ const StyledSkillsContainer = styled.div`
   margin-top: 5rem;
 `;
 
+const StyledLink = styled(Link)`
+  color: var(--color-blue-500);
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.8rem;
+
+  &:hover {
+    color: var(--color-blue-700);
+  }
+`;
+
 function AboutMe() {
   const [curTime, setCurTime] = useState(new Date());
 
@@ -74,7 +85,7 @@ function AboutMe() {
           <strong> machine learning</strong> projects. I'm eager to contribute
           my passion and skills to real-world projects.
         </p>
-        <Link to="/contactMe">Learn more about me.</Link>
+        <StyledLink to="/contactMe">Learn more about me.</StyledLink>
 
         <StyledSkillsContainer>
           <Heading as="h2">My Skill Bucket</Heading>

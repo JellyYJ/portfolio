@@ -11,17 +11,17 @@ const StyledAppLayout = styled.div`
 `;
 
 const Main = styled.main`
-  background-color: var(--color-grey-0);
+  background-color: var(--color-brown-0);
   padding: 5rem 6rem 8rem;
 
-  @media (max-width: 512px) {
+  /* @media (max-width: 512px) {
     padding: 1rem 2rem 3rem;
-  }
+  } */
 `;
 
 const Container = styled.div`
   max-width: 140rem;
-  margin: 8rem auto;
+  margin: 5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@ const Container = styled.div`
   /* background-color: var(--color-grey-400); */
 
   @media (max-width: 1080px) {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     max-width: 90rem;
   }
 `;
