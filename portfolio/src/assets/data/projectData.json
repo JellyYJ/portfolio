@@ -11,23 +11,28 @@
   },
   {
     "name": "Solar Offset",
-    "img": "/src/assets/solarLandingPage.png",
+    "date": "2023 Feb - May",
+    "img": "/src/assets/solarOffset/solarLandingPage.png",
     "link": "/solarOffset",
     "summary": "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
     "techStck": ["JavaScript", "React", "Node.jS", "MongoDB", "CSS"],
     "details": "",
     "gifs": [
       {
-        "gif": "/src/assets/solarPay.gif",
-        "explanation": "explain1explain1explain1explain1"
+        "gif": "/src/assets/solarOffset/solarPay.gif",
+        "gifTitle": "Checkout Walkthrough",
+        "tech": "Strip API",
+        "explanation": "The application allows registered and non-registered user to select and pay for the solar plan of their choices."
       },
       {
-        "gif": "/src/assets/solarPay.gif",
-        "explanation": "explain2explain2explain2explain2"
+        "gif": "/src/assets/solarOffset/solarUserDashboard.gif",
+        "gifTitle": "Dashboard of a Registered User",
+        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
       },
       {
-        "gif": "/src/assets/solarPay.gif",
-        "explanation": "explain3explain3explain3explain3"
+        "gif": "/src/assets/solarOffset/solarCalculator.gif",
+        "gifTitle": "Embedded Footprint Calculator",
+        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
       }
     ]
   },

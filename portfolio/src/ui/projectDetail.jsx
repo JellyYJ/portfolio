@@ -28,40 +28,6 @@ const InfoContainer = styled.div`
   gap: 3rem;
 `;
 
-// const GifsContainer = styled.ul`
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   margin-top: 8rem;
-//   gap: 5rem;
-//   @media (max-width: 1240px) {
-//     margin-top: 3rem;
-//   }
-// `;
-
-// const Gif = styled.img`
-//   width: 60%;
-//   border-radius: 10px;
-//   margin-right: 2rem;
-//   padding: 15px;
-// `;
-
-// const ExplanationContainer = styled.div`
-//   max-width: 40%;
-//   font-size: 1.5rem;
-// `;
-
-// const GifContainer = styled.li`
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   background-color: var(--color-grey-50);
-
-//   @media (max-width: 1024px) {
-//     flex-direction: column;
-//   }
-// `;
-
 const GifsContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -97,12 +63,22 @@ const Gif = styled.img`
   }
 `;
 
+const GifTitle = styled.div`
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+`;
+
+const ExplanationText = styled.p`
+  font-size: 1.7rem;
+  line-height: 1.4;
+`;
+
 const ExplanationContainer = styled.div`
   max-width: 100%;
   margin: auto;
-  p {
-    margin-top: 10px;
-  }
+  text-align: left;
 `;
 
 const ProjectImage = styled.img`
@@ -165,14 +141,12 @@ function ProjectDetail({ project }) {
       </StyledDiv> */}
 
       <GifsContainer>
-        {project?.gifs?.map((gifInfo, index) => (
+        {project.gifs?.map((gifInfo, index) => (
           <GifContainer key={index}>
-            <Gif src={gifInfo.gif} alt={`GIF ${index + 1}`} />
+            <Gif src={gifInfo.gif} alt={gifInfo?.gifTitle} />
             <ExplanationContainer>
-              <StyledDiv>
-                <strong>Explanation {index + 1}</strong>
-              </StyledDiv>
-              <p>{gifInfo.explanation}</p>
+              <GifTitle>{gifInfo.gifTitle}</GifTitle>
+              <ExplanationText>{gifInfo.explanation}</ExplanationText>
             </ExplanationContainer>
           </GifContainer>
         ))}
