@@ -99,12 +99,32 @@ const ProjectListItem = styled.li`
 
   &:hover {
     ${ProjectImage} {
-      transition: transform 0.25s ease-in-out;
+      transition: transform 0.3s ease-in-out;
       transform: translateY(-10px);
     }
 
     ${Heading} {
-      text-decoration: underline;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        /* left: 0; */
+        width: 0;
+        height: 1.5px;
+        background: linear-gradient(
+          to right,
+          var(--color-grey-700),
+          transparent
+        );
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover:before {
+        width: 100%;
+      }
     }
   }
 
@@ -120,6 +140,7 @@ const ProjectDetails = styled.div`
 const ProjectDescription = styled(StyledDiv)`
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
 `;
 
 function ProjectsList() {
