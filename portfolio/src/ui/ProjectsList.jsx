@@ -95,15 +95,16 @@ const ProjectListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--color-grey-0);
+  background-color: var(--color-brown-0);
 
   &:hover {
     ${ProjectImage} {
-      transform: translateY(-10px); /* Move the image up by 10 pixels */
+      transition: transform 0.25s ease-in-out;
+      transform: translateY(-10px);
     }
 
     ${Heading} {
-      text-decoration: underline; /* Underline the heading */
+      text-decoration: underline;
     }
   }
 

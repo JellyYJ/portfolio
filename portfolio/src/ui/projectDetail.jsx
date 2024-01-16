@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
-import TechStack from "./TechStack";
 import Button from "./Button";
 
 import { useMoveBack } from "../hooks/useMoveBack";
