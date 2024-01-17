@@ -1,55 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { IoMdArrowBack } from "react-icons/io";
+
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
-import Button from "./Button";
 import Popup from "./Popup";
+import Button from "./Button";
+import ProjectDetailsHeader from "./ProjectDetailsHeader";
+import ProjectShowcase from "./ProjectShowcase";
 
 import { useMoveBack } from "../hooks/useMoveBack";
 
 const BackButton = styled(Button)`
   margin-right: auto;
 `;
-
-const ProjectHeader = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const InfoContainer = styled.div`
-  background-color: var(--color-blue-50);
-  padding: 1rem;
-  border-radius: 5px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 3rem;
-`;
-
-// const GifsContainer = styled.ul`
-//   display: flex;
-//   flex-wrap: wrap;
-//   max-width: 120rem;
-//   gap: 2rem;
-// `;
-
-// const GifContainer = styled.li`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   background-color: var(--color-grey-50);
-//   padding: 20px;
-//   border-radius: 10px;
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-//   margin-bottom: 20px;
-
-//   @media (min-width: 768px) {
-//     flex-direction: row;
-//     align-items: flex-start;
-//   }
-// `;
 
 const GifsContainer = styled.div`
   display: grid;
@@ -59,68 +23,6 @@ const GifsContainer = styled.div`
   @media (min-width: 1240px) {
     grid-template-columns: repeat(2, 1fr);
   }
-`;
-
-const GifContainer = styled.li`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--color-grey-50);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  gap: 2rem;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  @media (min-width: 768px) {
-    flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-    align-items: flex-start;
-  }
-`;
-
-const Gif = styled.img`
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  /* margin: ${({ reverse }) => (reverse ? "0 0 0 20px" : "0 20px 0 0")}; */
-
-  @media (min-width: 768px) {
-    width: 60%;
-    margin-bottom: 0px;
-  }
-`;
-
-const GifTitle = styled.div`
-  font-size: 2rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-  /* margin-bottom: 10px; */
-`;
-
-const ExplanationText = styled.p`
-  font-size: 1.7rem;
-  line-height: 1.4;
-`;
-
-const ExplanationContainer = styled.div`
-  max-width: 100%;
-  margin: auto;
-  text-align: left;
-`;
-
-const ProjectImage = styled.img`
-  max-width: 100%;
-  height: auto;
-`;
-
-const DateInfo = styled(StyledDiv)`
-  font-size: 1.5rem;
 `;
 
 const Description = styled(StyledDiv)`
@@ -157,27 +59,10 @@ function ProjectDetail({ project }) {
   return (
     <>
       <BackButton variation="secondary" onClick={moveBack}>
-        Back
+        <IoMdArrowBack />
       </BackButton>
 
-      <ProjectHeader>
-        <Heading as="h3">{project.name}</Heading>
-        <InfoContainer>
-          <DateInfo>
-            <strong>Date:</strong> {project.date}
-          </DateInfo>
-          {project.projectLink && (
-            <a
-              href={project.projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Website
-            </a>
-          )}
-        </InfoContainer>
-      </ProjectHeader>
-
+      <ProjectDetailsHeader project={project} moveBack={moveBack} />
       {/* <ProjectImage src={project.img} alt={project.name} /> */}
       {/* <Description>{project.summary}</Description> */}
       {/* <ProjectImage src={project.img2} alt={`${project.name} Demo`} /> */}
@@ -187,24 +72,17 @@ function ProjectDetail({ project }) {
 
       <GifsContainer>
         {project.gifs?.map((gifInfo, index) => (
-          <GifContainer
+          <ProjectShowcase
             key={index}
-            reverse={index % 2 === 1}
-            onClick={() => openModal(gifInfo.gif)}
-          >
-            <Gif
-              src={gifInfo.gif}
-              alt={gifInfo?.gifTitle}
-              reverse={index % 2 === 1}
-            />
-
-            <ExplanationContainer>
-              <GifTitle>{gifInfo.gifTitle}</GifTitle>
-              <ExplanationText>{gifInfo.explanation}</ExplanationText>
-            </ExplanationContainer>
-          </GifContainer>
+            gifInfo={{ ...gifInfo, index }}
+            openModal={openModal}
+          />
         ))}
       </GifsContainer>
+
+      <Popup isOpen={modalOpen} onClose={closeModal}>
+        {selectedGif && <img src={selectedGif} alt={selectedGif.gifTitle} />}
+      </Popup>
 
       {project.features && (
         <FeaturesContainer>
@@ -216,10 +94,6 @@ function ProjectDetail({ project }) {
           </ul>
         </FeaturesContainer>
       )}
-
-      <Popup isOpen={modalOpen} onClose={closeModal}>
-        {selectedGif && <img src={selectedGif} alt={selectedGif.gifTitle} />}
-      </Popup>
 
       <AdditionalInfo>
         <p>

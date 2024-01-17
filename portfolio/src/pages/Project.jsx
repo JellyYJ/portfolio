@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectDetail from "../ui/projectDetail";
+import ProjectDetail from "../ui/ProjectDetail";
 import { useParams } from "react-router-dom";
 import projectsData from "../assets/data/projectData.json";
 
