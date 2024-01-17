@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import Button from "./Button";
+import Popup from "./Popup";
 
 import { useMoveBack } from "../hooks/useMoveBack";
 
@@ -27,11 +28,37 @@ const InfoContainer = styled.div`
   gap: 3rem;
 `;
 
-const GifsContainer = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 120rem;
+// const GifsContainer = styled.ul`
+//   display: flex;
+//   flex-wrap: wrap;
+//   max-width: 120rem;
+//   gap: 2rem;
+// `;
+
+// const GifContainer = styled.li`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   background-color: var(--color-grey-50);
+//   padding: 20px;
+//   border-radius: 10px;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//   margin-bottom: 20px;
+
+//   @media (min-width: 768px) {
+//     flex-direction: row;
+//     align-items: flex-start;
+//   }
+// `;
+
+const GifsContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
+
+  @media (min-width: 1240px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const GifContainer = styled.li`
@@ -43,9 +70,16 @@ const GifContainer = styled.li`
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  gap: 2rem;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
     align-items: flex-start;
   }
 `;
@@ -53,12 +87,12 @@ const GifContainer = styled.li`
 const Gif = styled.img`
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  /* margin: ${({ reverse }) => (reverse ? "0 0 0 20px" : "0 20px 0 0")}; */
 
   @media (min-width: 768px) {
     width: 60%;
-    margin-bottom: 0;
-    margin-right: 20px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -107,6 +141,18 @@ const AdditionalInfo = styled(StyledDiv)`
 
 function ProjectDetail({ project }) {
   const moveBack = useMoveBack();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedGif, setSelectedGif] = useState(null);
+
+  const openModal = (gif) => {
+    setSelectedGif(gif);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedGif(null);
+    setModalOpen(false);
+  };
 
   return (
     <>
@@ -141,8 +187,17 @@ function ProjectDetail({ project }) {
 
       <GifsContainer>
         {project.gifs?.map((gifInfo, index) => (
-          <GifContainer key={index}>
-            <Gif src={gifInfo.gif} alt={gifInfo?.gifTitle} />
+          <GifContainer
+            key={index}
+            reverse={index % 2 === 1}
+            onClick={() => openModal(gifInfo.gif)}
+          >
+            <Gif
+              src={gifInfo.gif}
+              alt={gifInfo?.gifTitle}
+              reverse={index % 2 === 1}
+            />
+
             <ExplanationContainer>
               <GifTitle>{gifInfo.gifTitle}</GifTitle>
               <ExplanationText>{gifInfo.explanation}</ExplanationText>
@@ -161,6 +216,10 @@ function ProjectDetail({ project }) {
           </ul>
         </FeaturesContainer>
       )}
+
+      <Popup isOpen={modalOpen} onClose={closeModal}>
+        {selectedGif && <img src={selectedGif} alt={selectedGif.gifTitle} />}
+      </Popup>
 
       <AdditionalInfo>
         <p>
