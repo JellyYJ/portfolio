@@ -4,6 +4,7 @@ import { IoMdArrowBack } from "react-icons/io";
 
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
+import TechStack from "./TechStack";
 import Popup from "./Popup";
 import Button from "./Button";
 import ProjectDetailsHeader from "./ProjectDetailsHeader";
@@ -11,14 +12,23 @@ import ProjectShowcase from "./ProjectShowcase";
 
 import { useMoveBack } from "../hooks/useMoveBack";
 
-const BackButton = styled(Button)`
+const PageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+`;
+
+const GifsSectionTitle = styled(Heading)`
+  font-size: 2.5rem;
+  /* margin-bottom: 10px; */
   margin-right: auto;
 `;
 
 const GifsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 3rem;
 
   @media (min-width: 1240px) {
     grid-template-columns: repeat(2, 1fr);
@@ -30,15 +40,15 @@ const Description = styled(StyledDiv)`
 `;
 
 const FeaturesContainer = styled.div`
-  margin-top: 20px;
+  /* margin-top: 20px; */
 `;
 
 const FeatureHeading = styled(Heading)`
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 `;
 
 const AdditionalInfo = styled(StyledDiv)`
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 `;
 
 function ProjectDetail({ project }) {
@@ -57,19 +67,12 @@ function ProjectDetail({ project }) {
   };
 
   return (
-    <>
-      <BackButton variation="secondary" onClick={moveBack}>
-        <IoMdArrowBack />
-      </BackButton>
-
+    <PageContainer>
       <ProjectDetailsHeader project={project} moveBack={moveBack} />
-      {/* <ProjectImage src={project.img} alt={project.name} /> */}
-      {/* <Description>{project.summary}</Description> */}
-      {/* <ProjectImage src={project.img2} alt={`${project.name} Demo`} /> */}
-      {/* <StyledDiv fontSize="1.5rem">
-        <strong>Project Walkthrough:</strong> {project.description}
-      </StyledDiv> */}
+      <Description>{project.summary}</Description>
+      <TechStack techData={project.techStck} />
 
+      <GifsSectionTitle as="h3">Project Details</GifsSectionTitle>
       <GifsContainer>
         {project.gifs?.map((gifInfo, index) => (
           <ProjectShowcase
@@ -100,7 +103,7 @@ function ProjectDetail({ project }) {
           <strong>Additional Information:</strong> {project.additionalInfo}
         </p>
       </AdditionalInfo>
-    </>
+    </PageContainer>
   );
 }
 

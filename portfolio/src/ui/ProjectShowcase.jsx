@@ -8,14 +8,13 @@ const GifContainer = styled.li`
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
   gap: 2rem;
 
-  &:hover {
+  /* &:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-  }
+  } */
 
   @media (min-width: 768px) {
     flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
@@ -30,23 +29,28 @@ const GifImage = styled.img`
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
 
   @media (min-width: 768px) {
     width: 60%;
     margin-bottom: 0px;
   }
+
+  ${GifContainer}:hover & {
+    transform: scale(1.1);
+  }
+`;
+
+const ExplanationContainer = styled.div`
+  max-width: 100%;
+  /* margin: auto; */
+  /* text-align: left; */
 `;
 
 const GifTitle = styled.div`
   font-size: 2rem;
   margin-bottom: 10px;
   font-weight: bold;
-`;
-
-const ExplanationContainer = styled.div`
-  max-width: 100%;
-  margin: auto;
-  text-align: left;
 `;
 
 const ExplanationText = styled.p`

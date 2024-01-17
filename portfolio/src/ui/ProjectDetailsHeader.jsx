@@ -2,11 +2,17 @@ import styled from "styled-components";
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import Button from "./Button";
+import { IoMdArrowBack } from "react-icons/io";
+
+const BackButton = styled(Button)`
+  margin-right: auto;
+`;
 
 const ProjectHeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 `;
 
 const InfoContainer = styled.div`
@@ -27,7 +33,12 @@ const DateInfo = styled(StyledDiv)`
 function ProjectDetailsHeader({ project, moveBack }) {
   return (
     <ProjectHeaderContainer>
-      <Heading as="h3">{project.name}</Heading>
+      <BackButton variation="secondary" onClick={moveBack}>
+        <IoMdArrowBack />
+      </BackButton>
+
+      <Heading as="h1">{project.name}</Heading>
+
       <InfoContainer>
         <DateInfo>
           <strong>Date:</strong> {project.date}
