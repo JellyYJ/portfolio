@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { IoMdArrowBack } from "react-icons/io";
 
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
 import Popup from "./Popup";
-import Button from "./Button";
 import ProjectDetailsHeader from "./ProjectDetailsHeader";
 import ProjectShowcase from "./ProjectShowcase";
 
@@ -30,7 +28,7 @@ const GifsContainer = styled.div`
   grid-template-columns: 1fr;
   gap: 3rem;
 
-  @media (min-width: 1240px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;

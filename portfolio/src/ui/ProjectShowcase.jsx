@@ -10,30 +10,19 @@ const GifContainer = styled.li`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 2rem;
 
-  /* &:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-  } */
-
-  @media (min-width: 768px) {
+  @media (min-width: 1240px) {
     flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-
-    /* flex-direction: ${({ reverse }) =>
-      (reverse ? "row-reverse" : "row").toString()};
-    align-items: flex-start; */
   }
 `;
 
 const GifImage = styled.img`
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 1rem;
   transition: transform 0.3s ease-in-out;
 
-  @media (min-width: 768px) {
-    width: 60%;
-    margin-bottom: 0px;
+  @media (min-width: 1240px) {
+    width: 50%;
+    /* margin-bottom: 0px; */
   }
 
   ${GifContainer}:hover & {
