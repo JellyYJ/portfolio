@@ -21,7 +21,7 @@ const GifImage = styled.img`
   transition: transform 0.3s ease-in-out;
 
   @media (min-width: 1240px) {
-    width: 50%;
+    width: 65%;
     /* margin-bottom: 0px; */
   }
 
