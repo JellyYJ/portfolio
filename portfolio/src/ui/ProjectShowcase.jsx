@@ -8,16 +8,16 @@ const GifContainer = styled.li`
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  gap: 2rem;
+  gap: 3rem;
 
-  /* @media (min-width: 1240px) {  IF use grid view*/
-  @media (min-width: 1080px) {
+  /* IF use grid view */
+  /* @media (min-width: 1240px) { */
+  @media (min-width: 876px) {
     flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   }
 `;
 
 const GifImage = styled.img`
-  /* height: 25rem; */
   width: 60%;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
@@ -27,7 +27,7 @@ const GifImage = styled.img`
   }
 
   ${GifContainer}:hover & {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `;
 
@@ -39,7 +39,7 @@ const ExplanationContainer = styled.div`
 
 const GifTitle = styled.div`
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: bold;
 `;
 
