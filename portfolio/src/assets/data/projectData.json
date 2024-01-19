@@ -1,13 +1,30 @@
 [
   {
-    "name": "Holiday Cabin",
+    "name": "The Wild Oasis",
     "date": "2023 Nov-Dec",
-    "img": "/src/assets/worldWise.png",
-    "link": "/holidayCabin",
+    "img": "/src/assets/wildOasis/wildOasis.png",
+    "link": "/wildOasis",
     "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
     "techStck": ["JavaScript", "React", "Supabase", "Styled Components"],
     "details": "",
-    "projectLink": "https://dictionary.cambridge.org/dictionary/english/web"
+    "projectLink": "https://one-wild-oasis.netlify.app/login",
+    "gifs": [
+      {
+        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
+        "gifTitle": "Booking Checkin",
+        "explanation": "The user can view the details of each booking, and can also check in the booking."
+      },
+      {
+        "gif": "/src/assets/wildOasis/cabinOperation.gif",
+        "gifTitle": "Dashboard of a Registered User",
+        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+      },
+      {
+        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
+        "gifTitle": "Embedded Footprint Calculator",
+        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
+      }
+    ]
   },
   {
     "name": "Solar Offset",
@@ -16,7 +33,7 @@
     "link": "/solarOffset",
     "summary": "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
     "techStck": ["JavaScript", "React", "Node.jS", "MongoDB", "CSS"],
-    "details": "",
+    "details": "Solar Offset ",
     "gifs": [
       {
         "gif": "/src/assets/solarOffset/solarPay.gif",

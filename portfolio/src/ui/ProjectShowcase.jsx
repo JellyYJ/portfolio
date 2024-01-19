@@ -10,19 +10,20 @@ const GifContainer = styled.li`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 2rem;
 
-  @media (min-width: 1240px) {
+  /* @media (min-width: 1240px) {  IF use grid view*/
+  @media (min-width: 1080px) {
     flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   }
 `;
 
 const GifImage = styled.img`
-  width: 100%;
+  /* height: 25rem; */
+  width: 60%;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 
   @media (min-width: 1240px) {
-    width: 65%;
-    /* margin-bottom: 0px; */
+    width: 50%;
   }
 
   ${GifContainer}:hover & {

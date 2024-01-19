@@ -28,9 +28,9 @@ const GifsContainer = styled.div`
   grid-template-columns: 1fr;
   gap: 3rem;
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 `;
 
 const Description = styled(StyledDiv)`
