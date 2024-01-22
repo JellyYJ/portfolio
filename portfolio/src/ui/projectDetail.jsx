@@ -67,7 +67,7 @@ function ProjectDetail({ project }) {
   return (
     <PageContainer>
       <ProjectDetailsHeader project={project} moveBack={moveBack} />
-      <Description>{project.summary}</Description>
+      <Description>{project.details}</Description>
       <TechStack techData={project.techStck} />
 
       <GifsSectionTitle as="h3">Project Details</GifsSectionTitle>

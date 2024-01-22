@@ -6,7 +6,7 @@
     "link": "/wildOasis",
     "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
     "techStck": ["JavaScript", "React", "Supabase", "Styled Components"],
-    "details": "",
+    "details": "details",
     "projectLink": "https://one-wild-oasis.netlify.app/login",
     "gifs": [
       {
@@ -16,7 +16,7 @@
       },
       {
         "gif": "/src/assets/wildOasis/cabinOperation.gif",
-        "gifTitle": "Dashboard of a Registered User",
+        "gifTitle": "Cabin Managemnet",
         "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
       },
       {
@@ -55,11 +55,36 @@
   },
   {
     "name": "Bird Sighting",
-    "img": "",
+    "img": "/src/assets/birdSighting/landingPage.png",
     "link": "/birdSighting",
-    "summary": "Uni project: allowing bird lovers to upload and view sightings of birds, also support offline and online real-time chatting, the chat history will be syncced once the user is connected to the internet.",
-    "techStck": ["JavaScript", "Node.jS", "MongoDB", "CSS"],
-    "details": ""
+    "date": "2023 Feb - May",
+    "summary": "This project is for bird lovers to post their spottings of bird with and without WiFi. And they are also chat online to share their thoughts about this bird.",
+    "techStck": [
+      "JavaScript",
+      "Express.js",
+      "MongoDB",
+      "CSS",
+      "socket.io",
+      "ServiceWorker"
+    ],
+    "details": "This project is designed for bird lovers to share their spottings of the bird they spotted. The user can post new birding sighings with and without Wi-fi. And all the sightings that have been viewed when the Wifi is availiable are saved in the IndexedDB for offline viewing.",
+    "gifs": [
+      {
+        "gif": "/src/assets/birdSighting/chat.gif",
+        "gifTitle": "Real-Time Chat",
+        "explanation": "The users can chat in real-time, the chat history will be saved in the database."
+      },
+      {
+        "gif": "/src/assets/birdSighting/knowledgeGraph.gif",
+        "gifTitle": "Search",
+        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+      },
+      {
+        "gif": "/src/assets/birdSighting/createNew.gif",
+        "gifTitle": "Embedded Footprint Calculator",
+        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
+      }
+    ]
   },
   {
     "name": "React Lizza.co",
