@@ -33,18 +33,6 @@ const GifsContainer = styled.div`
   } */
 `;
 
-const Description = styled(StyledDiv)`
-  font-size: 1.8rem;
-`;
-
-const FeaturesContainer = styled.div`
-  /* margin-top: 20px; */
-`;
-
-const FeatureHeading = styled(Heading)`
-  /* margin-bottom: 10px; */
-`;
-
 const AdditionalInfo = styled(StyledDiv)`
   /* font-size: 1.2rem; */
 `;
@@ -67,7 +55,7 @@ function ProjectDetail({ project }) {
   return (
     <PageContainer>
       <ProjectDetailsHeader project={project} moveBack={moveBack} />
-      <Description>{project.details}</Description>
+      <StyledDiv role="paragraph">{project.details}</StyledDiv>
       <TechStack techData={project.techStck} />
 
       <GifsSectionTitle as="h3">Project Details</GifsSectionTitle>
@@ -86,14 +74,14 @@ function ProjectDetail({ project }) {
       </Popup>
 
       {project.features && (
-        <FeaturesContainer>
-          <FeatureHeading as="h4">Key Features</FeatureHeading>
+        <StyledDiv>
+          <Heading as="h4">Key Features</Heading>
           <ul>
             {project.features.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
           </ul>
-        </FeaturesContainer>
+        </StyledDiv>
       )}
 
       <AdditionalInfo>
