@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const StyledDiv = styled.div`
-  max-width: 75rem;
+  max-width: 70rem;
   /* margin: auto; */
 
   ${(props) =>

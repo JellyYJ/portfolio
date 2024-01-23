@@ -1,7 +1,7 @@
 [
   {
     "name": "The Wild Oasis",
-    "date": "2023 Nov-Dec",
+    "date": "Nov - Dec 2023",
     "img": "/src/assets/wildOasis/wildOasis.png",
     "link": "/wildOasis",
     "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Solar Offset",
-    "date": "2023 Feb - May",
+    "date": "Feb - May 2023",
     "img": "/src/assets/solarOffset/solarLandingPage.png",
     "link": "/solarOffset",
     "summary": "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
@@ -57,7 +57,7 @@
     "name": "Bird Sighting",
     "img": "/src/assets/birdSighting/landingPage.png",
     "link": "/birdSighting",
-    "date": "2023 Feb - May",
+    "date": "Feb - May 2023",
     "summary": "This project is for bird lovers to post their spottings of bird with and without WiFi. And they are also chat online to share their thoughts about this bird.",
     "techStck": [
       "JavaScript",
@@ -89,6 +89,7 @@
   {
     "name": "React Lizza.co",
     "img": "/src/assets/pizzaCo.png",
+    "date": "June 2023",
     "link": "/reactPizza",
     "summary": "This application allows users to easily browse and order pizzas online. Using React Router, Redux, and Thunks for state management, it offers a streamlined and responsive user experience.",
     "techStck": ["React", "Redux", "Thunks", "Tailwind CSS"],
