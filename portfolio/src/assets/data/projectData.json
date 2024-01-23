@@ -96,7 +96,7 @@
   },
   {
     "name": "Heartbeat Classification",
-    "img": "",
+    "img": "/src/assets/classyWeather.png",
     "link": "/heartbeatClassification",
     "summary": "",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
@@ -104,10 +104,46 @@
   },
   {
     "name": "Step Counter",
-    "img": "",
+    "img": "/src/assets/classyWeather.png",
     "link": "/stepCounter",
     "summary": "",
     "techStck": ["Java"],
+    "details": ""
+  },
+  {
+    "name": "Classy Weather",
+    "img": "/src/assets/classyWeather.png",
+    "link": "/classyWeather",
+    "type": "mini",
+    "summary": "",
+    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "details": ""
+  },
+  {
+    "name": "Classy Weather3",
+    "img": "/src/assets/classyWeather.png",
+    "link": "/classyWeather",
+    "type": "mini",
+    "summary": "",
+    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "details": ""
+  },
+  {
+    "name": "Classy Weather2",
+    "img": "/src/assets/classyWeather.png",
+    "link": "/classyWeather",
+    "type": "mini",
+    "summary": "",
+    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "details": ""
+  },
+  {
+    "name": "Classy Weather1",
+    "img": "/src/assets/classyWeather.png",
+    "link": "/classyWeather",
+    "type": "mini",
+    "summary": "",
+    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
     "details": ""
   }
 ]

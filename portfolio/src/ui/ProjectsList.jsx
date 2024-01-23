@@ -5,55 +5,6 @@ import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
 
-// const projectsData = [
-//   {
-//     name: "Holiday Cabin",
-//     img: "src/assets/worldWise.png",
-//     link: "/holidayCabin",
-//     details:
-//       "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
-//     techStck: ["JavaScript", "React", "Supabase", "Styled Components"],
-//   },
-//   {
-//     name: "Solar Offset",
-//     img: "src/assets/pizzaCo.png",
-//     link: "/solarOffset",
-//     details:
-//       "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
-//     techStck: ["JavaScript", "React", "Node.jS", "MongoDB", "CSS"],
-//   },
-//   {
-//     name: "Bird Sighting",
-//     img: "",
-//     link: "/birdSighting",
-//     details:
-//       "Uni project: allowing bird lovers to upload and view sightings of birds, also support offline and online real-time chatting, the chat history will be syncced once the user is connected to the internet.",
-//     techStck: ["JavaScript", "Node.jS", "MongoDB", "CSS"],
-//   },
-//   {
-//     name: "React Lizza.co",
-//     img: "src/assets/pizzaCo.png",
-//     link: "/reactPizza",
-//     details:
-//       "This project is a practice project for learning React and Tailwind.",
-//     techStck: ["JavaScript", "React,", "Tailwind"],
-//   },
-//   {
-//     name: "Heartbeat Classification",
-//     img: "",
-//     link: "/heartbeatClassification",
-//     details: "",
-//     techStck: ["Python", "Numpy", "Matoplot", "PyTorch", "TensorFlow"],
-//   },
-//   {
-//     name: "Step Counter",
-//     img: "",
-//     link: "/stepCounter",
-//     details: "",
-//     techStck: ["Java"],
-//   },
-// ];
-
 const ProjectsListContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -144,9 +95,14 @@ const ProjectDescription = styled(StyledDiv)`
 `;
 
 function ProjectsList() {
+  // Filter out projects with type === "mini"
+  const filteredProjects = projectsData.filter(
+    (project) => project.type !== "mini"
+  );
+
   return (
     <ProjectsListContainer>
-      {projectsData.map((project) => (
+      {filteredProjects.map((project) => (
         <Link to={`/projects${project.link}`} key={project.name}>
           <ProjectListItem key={project.name}>
             <ProjectImage src={project.img} alt={project.name} />
