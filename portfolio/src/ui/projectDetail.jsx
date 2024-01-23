@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import Heading from "./Heading";
@@ -51,6 +51,11 @@ function ProjectDetail({ project }) {
     setSelectedGif(null);
     setModalOpen(false);
   };
+
+  // Scroll to the top when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <PageContainer>
