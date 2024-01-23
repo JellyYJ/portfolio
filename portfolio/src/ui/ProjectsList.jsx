@@ -29,7 +29,7 @@ const ProjectImage = styled.img`
     width: 65rem;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1080px) {
     width: 65rem;
     margin-right: 0;
     margin-bottom: 2rem;
@@ -79,7 +79,7 @@ const ProjectListItem = styled.li`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1080px) {
     flex-direction: column;
   }
 `;

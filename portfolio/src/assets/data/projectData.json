@@ -5,7 +5,7 @@
     "img": "/src/assets/wildOasis/wildOasis.png",
     "link": "/wildOasis",
     "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
-    "techStck": ["JavaScript", "React", "Supabase", "Styled Components"],
+    "techStck": ["React", "Supabase", "Styled Components"],
     "details": "details",
     "projectLink": "https://one-wild-oasis.netlify.app/login",
     "gifs": [
@@ -32,7 +32,7 @@
     "img": "/src/assets/solarOffset/solarLandingPage.png",
     "link": "/solarOffset",
     "summary": "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
-    "techStck": ["JavaScript", "React", "Node.jS", "MongoDB", "CSS"],
+    "techStck": ["React", "Node.jS", "MongoDB", "CSS"],
     "details": "Solar Offset ",
     "gifs": [
       {
@@ -90,9 +90,21 @@
     "name": "React Lizza.co",
     "img": "/src/assets/pizzaCo.png",
     "link": "/reactPizza",
-    "summary": "This project is a practice project for learning React and Tailwind.",
-    "techStck": ["JavaScript", "React,", "Tailwind"],
-    "details": ""
+    "summary": "This application allows users to easily browse and order pizzas online. Using React Router, Redux, and Thunks for state management, it offers a streamlined and responsive user experience.",
+    "techStck": ["React", "Redux", "Thunks", "Tailwind CSS"],
+    "details": "This project is for practicing, leveraging React Router for smooth navigation and integrating Redux with Thunks for efficient state management. Tailwind CSS was also explored for a modern web design. I also designed 'apiRestaurant' for fetching the data menu and order infomation.",
+    "gifs": [
+      {
+        "gif": "/src/assets/pizza/order.gif",
+        "gifTitle": "Order Walkthrough",
+        "explanation": "The users can chat in real-time, the chat history will be saved in the database."
+      },
+      {
+        "gif": "/src/assets/pizza/search.gif",
+        "gifTitle": "Search for an Order",
+        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+      }
+    ]
   },
   {
     "name": "Heartbeat Classification",
