@@ -87,8 +87,8 @@
     ]
   },
   {
-    "name": "React Lizza.co",
-    "img": "/src/assets/pizzaCo.png",
+    "name": "React Pizza.co",
+    "img": "/src/assets/pizza/pizzaCo.png",
     "date": "June 2023",
     "link": "/reactPizza",
     "summary": "This application allows users to easily browse and order pizzas online. Using React Router, Redux, and Thunks for state management, it offers a streamlined and responsive user experience.",
@@ -98,12 +98,12 @@
       {
         "gif": "/src/assets/pizza/order.gif",
         "gifTitle": "Order Walkthrough",
-        "explanation": "The users can chat in real-time, the chat history will be saved in the database."
+        "explanation": "The user can view and order the pizza. The express delivery can be selected when placing the order, or when viewing the summary of the order."
       },
       {
         "gif": "/src/assets/pizza/search.gif",
         "gifTitle": "Search for an Order",
-        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+        "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
       }
     ]
   },
@@ -119,6 +119,7 @@
     "name": "Step Counter",
     "img": "/src/assets/classyWeather.png",
     "link": "/stepCounter",
+    "type": "mini",
     "summary": "",
     "techStck": ["Java"],
     "details": ""
