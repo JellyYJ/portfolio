@@ -39,7 +39,7 @@ const StyledSkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 70rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
 `;
 
 const StyledLink = styled(Link)`
@@ -92,13 +92,13 @@ function AboutMe() {
           <SkillIcons skillsData={skillsData} />
         </StyledSkillsContainer>
 
-        <StyledSkillsContainer>
+        {/* <StyledSkillsContainer>
           <Heading as="h2">Contact Me</Heading>
           <p>
             Please contact me by email: LYJ10000H@gmail.com. I can start working
             from <strong>Jan. 2023</strong>
           </p>
-        </StyledSkillsContainer>
+        </StyledSkillsContainer> */}
       </TextContainer>
     </>
   );
