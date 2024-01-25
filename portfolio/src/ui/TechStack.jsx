@@ -3,14 +3,14 @@ import styled from "styled-components";
 const TechContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 0.5rem;
 `;
 
 const TechItem = styled.span`
-  background-color: var(--color-grey-50);
+  background-color: var(--color-brown-50);
   padding: 0.5rem;
-  border-radius: 4px;
+  border-radius: 8px;
 `;
 
 function TeckStack({ techData }) {

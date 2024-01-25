@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import projectsData from "../assets/data/projectData.json";
 import Heading from "./Heading";
-import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
 
 const ProjectsListContainer = styled.ul`
@@ -46,7 +45,7 @@ const ProjectListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--color-brown-0);
+  background-color: var(--color-brown-100);
 
   &:hover {
     ${ProjectImage} {
@@ -86,16 +85,12 @@ const ProjectListItem = styled.li`
 
 const ProjectDetails = styled.div`
   max-width: 50rem;
-`;
-
-const ProjectDescription = styled(StyledDiv)`
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 function ProjectsList() {
-  // Filter out projects with type === "mini"
   const filteredProjects = projectsData.filter(
     (project) => project.type !== "mini"
   );
@@ -108,7 +103,7 @@ function ProjectsList() {
             <ProjectImage src={project.img} alt={project.name} />
             <ProjectDetails>
               <Heading as="h3">{project.name}</Heading>
-              <ProjectDescription>{project.summary}</ProjectDescription>
+              {/* <ProjectDescription>{project.summary}</ProjectDescription> */}
               <TechStack techData={project.techStck} />
             </ProjectDetails>
           </ProjectListItem>

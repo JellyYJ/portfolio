@@ -4,7 +4,6 @@ import styled from "styled-components";
 import projectsData from "../assets/data/projectData.json";
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
-import TechStack from "./TechStack";
 
 const ProjectMiniContainer = styled.div`
   display: grid;
@@ -15,7 +14,7 @@ const ProjectMiniContainer = styled.div`
 `;
 
 const MiniProjectListItem = styled.div`
-  background-color: var(--color-brown-0);
+  background-color: var(--color-brown-100);
 `;
 
 const MiniProjectImage = styled.img`
@@ -31,7 +30,6 @@ const MiniProjectDetails = styled.div`
 const MiniProjectDescription = styled(StyledDiv)`
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  /* margin-top: 1rem; */
 `;
 
 function ProjectMini() {
@@ -48,7 +46,6 @@ function ProjectMini() {
             <MiniProjectDetails>
               <Heading as="h4">{project.name}</Heading>
               <MiniProjectDescription>{project.summary}</MiniProjectDescription>
-              <TechStack techData={project.techStck} />
             </MiniProjectDetails>
           </MiniProjectListItem>
         </Link>
