@@ -1,39 +1,12 @@
 [
   {
-    "name": "The Wild Oasis",
-    "date": "Nov - Dec 2023",
-    "img": "/src/assets/wildOasis/wildOasis.png",
-    "link": "/wildOasis",
-    "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
-    "techStck": ["React", "Supabase", "Styled Components"],
-    "details": "details",
-    "projectLink": "https://one-wild-oasis.netlify.app/login",
-    "gifs": [
-      {
-        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
-        "gifTitle": "Booking Checkin",
-        "explanation": "The user can view the details of each booking, and can also check in the booking."
-      },
-      {
-        "gif": "/src/assets/wildOasis/cabinOperation.gif",
-        "gifTitle": "Cabin Managemnet",
-        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
-      },
-      {
-        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
-        "gifTitle": "Embedded Footprint Calculator",
-        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
-      }
-    ]
-  },
-  {
     "name": "Solar Offset",
     "date": "Feb - May 2023",
     "img": "/src/assets/solarOffset/solarLandingPage.png",
     "link": "/solarOffset",
-    "summary": "This project aimed to create a platform for UK residents to fund solar panels in African countries.",
-    "techStck": ["React", "Node.jS", "MongoDB", "CSS"],
-    "details": "Solar Offset ",
+    "summary": "Solar Offset is a university project, with the aim of creating a platform allowing UK residents to contribute to solar panel installations in African countries, thereby offsetting household carbon emissions.",
+    "techStck": ["React", "Node.jS", "MongoDB", "Ant-Design"],
+    "details": "This university team project involved using technologies such as React and Ant-design for front-end development, Node.js for back-end processes, and MongoDB for database management. The project also involves API integration. The focus was on practical application, collaborative development, and problem-solving which gives me an understanding of the full-stack web development lifecycle.",
     "gifs": [
       {
         "gif": "/src/assets/solarOffset/solarPay.gif",
@@ -54,6 +27,34 @@
     ]
   },
   {
+    "name": "The Wild Oasis",
+    "date": "Nov - Dec 2023",
+    "img": "/src/assets/wildOasis/wildOasis.png",
+    "link": "/wildOasis",
+    "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
+    "techStck": ["React", "Supabase", "Styled Components"],
+    "details": "The Wild Oasis is an immersive project, showcasing a real-world-like booking system for holiday cabins. Built with cutting-edge technologies, including React for responsive frontend development, Supabase for seamless database management, and Styled Components for a stylish design. The project can be further developed by implementing booking management system",
+    "projectLink": "https://one-wild-oasis.netlify.app/login",
+    "gifs": [
+      {
+        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
+        "gifTitle": "Booking Checkin",
+        "explanation": "The user can view the details of each booking, and can also check in the booking."
+      },
+      {
+        "gif": "/src/assets/wildOasis/cabinOperation.gif",
+        "gifTitle": "Cabin Managemnet",
+        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+      },
+      {
+        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
+        "gifTitle": "Embedded Footprint Calculator",
+        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
+      }
+    ]
+  },
+
+  {
     "name": "Bird Sighting",
     "img": "/src/assets/birdSighting/landingPage.png",
     "link": "/birdSighting",
@@ -63,7 +64,6 @@
       "JavaScript",
       "Express.js",
       "MongoDB",
-      "CSS",
       "socket.io",
       "ServiceWorker"
     ],
@@ -91,8 +91,8 @@
     "img": "/src/assets/pizza/pizzaCo.png",
     "date": "June 2023",
     "link": "/reactPizza",
-    "summary": "This application allows users to easily browse and order pizzas online. Using React Router, Redux, and Thunks for state management, it offers a streamlined and responsive user experience.",
-    "techStck": ["React", "Redux", "Thunks", "Tailwind CSS"],
+    "summary": "This application allows users to easily browse and order pizzas online.",
+    "techStck": ["React", "Redux", "Thunks", "Tailwind"],
     "details": "This project is for practicing, leveraging React Router for smooth navigation and integrating Redux with Thunks for efficient state management. Tailwind CSS was also explored for a modern web design. I also designed 'apiRestaurant' for fetching the data menu and order infomation.",
     "gifs": [
       {
