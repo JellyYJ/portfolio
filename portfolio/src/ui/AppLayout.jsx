@@ -40,8 +40,8 @@ const BackgroundShape = styled.div`
   height: 100%;
   background: radial-gradient(
       circle at 0% 100%,
-      var(--color-orange-700),
-      transparent 25%
+      var(--color-blue-700),
+      transparent 30%
     ),
     radial-gradient(circle at 30% 120%, var(--color-pink-300), transparent 30%);
   z-index: 0;

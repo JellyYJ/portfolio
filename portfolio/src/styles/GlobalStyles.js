@@ -44,8 +44,6 @@ const GlobalStyles = createGlobalStyle`
     --color-blue-900: #174283;
 
 
-    --color-blue-100: #e0f2fe;
-    --color-indigo-700: #1572B6;
     --color-green-100: #dcfce7;
     --color-green-700: #15803d;
     --color-yellow-100: #fef9c3;

@@ -23,6 +23,10 @@ const ProjectImage = styled.img`
   height: auto;
   border-radius: 1.5rem;
   margin-right: 5rem;
+  &:hover {
+    box-shadow: 1rem 1rem 3rem var(--color-blue-200);
+    transition: background-color 0.3s ease-in-out;
+  }
 
   @media (max-width: 1240px) {
     width: 65rem;
@@ -90,6 +94,10 @@ const ProjectDetails = styled.div`
   align-items: center;
 `;
 
+const ProjectDescription = styled.div`
+  font-size: 1.8rem;
+`;
+
 function ProjectsList() {
   const filteredProjects = projectsData.filter(
     (project) => project.type !== "mini"
@@ -103,7 +111,7 @@ function ProjectsList() {
             <ProjectImage src={project.img} alt={project.name} />
             <ProjectDetails>
               <Heading as="h3">{project.name}</Heading>
-              {/* <ProjectDescription>{project.summary}</ProjectDescription> */}
+              <ProjectDescription>{project.summary}</ProjectDescription>
               <TechStack techData={project.techStck} />
             </ProjectDetails>
           </ProjectListItem>
