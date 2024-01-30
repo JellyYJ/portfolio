@@ -12,7 +12,7 @@ const StyledAppLayout = styled.div`
 
 const Main = styled.main`
   position: relative;
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
   padding: 5rem 6rem 8rem;
 `;
 

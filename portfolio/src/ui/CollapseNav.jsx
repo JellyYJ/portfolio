@@ -17,7 +17,7 @@ const CollapseDiv = styled.div`
 
 const ToggleButton = styled.button`
   border-radius: 0.8rem;
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
   color: var(--color-grey-800);
   font-size: 2.5rem;
   border: none;

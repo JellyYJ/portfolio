@@ -14,7 +14,7 @@ const ProjectMiniContainer = styled.div`
 `;
 
 const MiniProjectListItem = styled.div`
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
 `;
 
 const MiniProjectImage = styled.img`

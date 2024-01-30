@@ -49,7 +49,7 @@ const ProjectListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
 
   &:hover {
     ${ProjectImage} {

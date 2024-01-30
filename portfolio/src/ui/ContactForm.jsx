@@ -10,7 +10,7 @@ const StyledForm = styled.form`
   max-width: 50rem;
   padding: 0 5rem 0 0;
   width: 100%;
-  border-right: 1px solid var(--color-brown-100);
+  border-right: 1px solid var(--color-brown-200);
   margin-top: 2rem;
 
   @media (max-width: 1024px) {
@@ -30,9 +30,9 @@ const StyledInput = styled.input`
   width: 100%;
   padding: 1rem;
   border: transparent;
-  border-bottom: 1px solid var(--color-brown-100);
+  border-bottom: 1px solid var(--color-brown-200);
   box-sizing: border-box;
-  background-color: var(--color-brown-50);
+  background-color: var(--color-brown-100);
 
   &:focus {
     border-bottom-color: var(--color-brown-500);
@@ -43,10 +43,10 @@ const StyledTextarea = styled.textarea`
   width: 100%;
   padding: 1rem;
   border: transparent;
-  border-bottom: 1px solid var(--color-brown-100);
+  border-bottom: 1px solid var(--color-brown-200);
   resize: vertical;
   box-sizing: border-box;
-  background-color: var(--color-brown-50);
+  background-color: var(--color-brown-100);
 
   &:focus {
     border-bottom-color: var(--color-brown-700);
