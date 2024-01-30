@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-import { toast } from "react-hot-toast";
-// import emailjs from "@emailjs/browser";
-import { sendEmail } from "../hooks/useSendEmail";
 import styled from "styled-components";
+import { toast } from "react-hot-toast";
+
 import Button from "../ui/Button";
+import { sendEmail } from "../hooks/useSendEmail";
 
 const StyledForm = styled.form`
   display: flex;

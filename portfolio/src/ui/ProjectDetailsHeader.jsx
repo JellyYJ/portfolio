@@ -6,6 +6,7 @@ import { IoMdArrowBack } from "react-icons/io";
 
 const BackButton = styled(Button)`
   margin-right: auto;
+  font-size: 1.8rem;
 `;
 
 const ProjectHeaderContainer = styled.div`
