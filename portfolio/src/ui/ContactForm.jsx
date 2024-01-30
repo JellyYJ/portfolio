@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
+// import emailjs from "@emailjs/browser";
+import { sendEmail } from "../hooks/useSendEmail";
 import styled from "styled-components";
 import Button from "../ui/Button";
 
@@ -53,35 +55,26 @@ const StyledTextarea = styled.textarea`
   }
 `;
 
-const ErrorMessage = styled.p`
-  color: var(--color-red-700);
-  font-size: 1rem;
-  margin-top: 0.5rem;
-`;
-
 function ContactMe() {
   const form = useRef();
-  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSendEmail = (e) => {
+  const handleSendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-          setError(error);
-        }
-      );
+    try {
+      setIsLoading(true);
+
+      const result = await sendEmail(form.current);
+      // console.log(result.text);
+      toast.success("Email sent successfully!");
+      form.current.reset();
+    } catch (error) {
+      // console.log(error.text);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -94,6 +87,7 @@ function ContactMe() {
             id="first_name"
             placeholder="First Name"
             required
+            disabled={isLoading}
           />
 
           <StyledInput
@@ -102,6 +96,7 @@ function ContactMe() {
             id="last_name"
             placeholder="Last Name"
             required
+            disabled={isLoading}
           />
         </NameContainer>
 
@@ -111,6 +106,7 @@ function ContactMe() {
           id="from_email"
           placeholder="Email"
           required
+          disabled={isLoading}
         />
 
         <StyledTextarea
@@ -119,17 +115,12 @@ function ContactMe() {
           rows="6"
           placeholder="Message"
           required
+          disabled={isLoading}
         />
 
-        <Button type="submit" variation="secondary">
-          Send
+        <Button type="submit" variation="secondary" disabled={isLoading}>
+          {isLoading ? "Sending..." : "Send"}
         </Button>
-
-        {error && (
-          <ErrorMessage>
-            Oops, something went wrong. Please try again.
-          </ErrorMessage>
-        )}
       </StyledForm>
     </>
   );
