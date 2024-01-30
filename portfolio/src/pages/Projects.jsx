@@ -1,7 +1,6 @@
 import ProjectsList from "../ui/ProjectsList";
 import Heading from "../ui/Heading";
 import ProjectMini from "../ui/ProjectMini";
-import SplitLine from "../ui/SplitLine";
 
 function Projects() {
   return (
