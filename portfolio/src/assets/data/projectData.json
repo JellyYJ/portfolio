@@ -132,32 +132,5 @@
     "summary": "",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
     "details": ""
-  },
-  {
-    "name": "Classy Weather3",
-    "img": "/src/assets/classyWeather.png",
-    "link": "/classyWeather",
-    "type": "mini",
-    "summary": "",
-    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
-    "details": ""
-  },
-  {
-    "name": "Classy Weather2",
-    "img": "/src/assets/classyWeather.png",
-    "link": "/classyWeather",
-    "type": "mini",
-    "summary": "",
-    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
-    "details": ""
-  },
-  {
-    "name": "Classy Weather1",
-    "img": "/src/assets/classyWeather.png",
-    "link": "/classyWeather",
-    "type": "mini",
-    "summary": "",
-    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
-    "details": ""
   }
 ]
