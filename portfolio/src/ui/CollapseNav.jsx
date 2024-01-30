@@ -5,22 +5,21 @@ import { IoMdMenu } from "react-icons/io";
 import { useDetectClickOutside } from "../hooks/useDetectClickOutside";
 
 const CollapseDiv = styled.div`
-  display: ${({ isCollapse }) => (isCollapse ? "block" : "none")};
-  background-color: #f0f0f0;
+  background-color: var(--color-brown-0);
   padding: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-brown-50);
   position: absolute;
   top: 8rem;
-  left: 3rem;
-  /* z-index: 1;  */
+  /* left: 3rem; */
+  z-index: 1;
+  display: ${({ isCollapse }) => (isCollapse ? "block" : "none")};
 `;
 
 const ToggleButton = styled.button`
   border-radius: 0.8rem;
-  background-color: var(--color-brown-0);
-  color: var(--color-brown-400);
-  padding: 1rem;
-  font-size: 2rem;
+  background-color: var(--color-brown-100);
+  color: var(--color-grey-800);
+  font-size: 2.5rem;
   border: none;
   cursor: pointer;
   position: absolute;
