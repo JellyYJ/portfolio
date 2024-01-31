@@ -55,6 +55,13 @@ const StyledTextarea = styled.textarea`
   }
 `;
 
+const FormButton = styled(Button)`
+  background-color: var(--color-brown-100);
+
+  &:hover {
+    background-color: var(--color-brown-200);
+  }
+`;
 function ContactMe() {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
@@ -118,9 +125,9 @@ function ContactMe() {
           disabled={isLoading}
         />
 
-        <Button type="submit" variation="secondary" disabled={isLoading}>
+        <FormButton type="submit" variation="secondary" disabled={isLoading}>
           {isLoading ? "Sending..." : "Send"}
-        </Button>
+        </FormButton>
       </StyledForm>
     </>
   );
