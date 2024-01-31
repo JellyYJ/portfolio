@@ -35,21 +35,17 @@ const skillsData = [
   },
 ];
 
-const StyledSkillsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 70rem;
-  margin-top: 6rem;
+const StyledSkillsContainer = styled(TextContainer)`
+  max-width: 65rem;
+  margin-top: 5rem;
 `;
 
 const StyledLink = styled(Link)`
   color: var(--color-blue-500);
   font-weight: bold;
-  text-decoration: none;
-  margin-top: 0.8rem;
 
   &:hover {
-    color: var(--color-blue-700);
+    color: var(--color-blue-800);
   }
 `;
 
@@ -99,7 +95,7 @@ function AboutMe() {
           <strong> machine learning</strong> projects. I'm eager to contribute
           my passion and skills to real-world projects.
         </p>
-        <StyledLink to="/contactMe">Learn more about me.</StyledLink>{" "}
+        <StyledLink to="/contactMe">Contact Me right now.</StyledLink>{" "}
         <StyledSkillsContainer>
           <Heading as="h2">My Skill Bucket</Heading>
           <SkillIcons skillsData={skillsData} />

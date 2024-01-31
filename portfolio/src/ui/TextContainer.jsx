@@ -12,7 +12,7 @@ const direction = {
 
 const TextContainer = styled.div`
   display: flex;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   max-width: ${(props) => props.maxWidth || "100rem"};
   margin-bottom: ${(props) => props.marginBottom || "3rem"};
 
