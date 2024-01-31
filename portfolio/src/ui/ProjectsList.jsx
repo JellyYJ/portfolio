@@ -8,10 +8,10 @@ const ProjectsListContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* max-width: 110rem; */
   margin-top: 8rem;
   gap: 10rem;
   padding: 0 16px;
+  transition: margin-top 0.3s;
 
   @media (max-width: 1240px) {
     margin-top: 3rem;
@@ -23,6 +23,7 @@ const ProjectImage = styled.img`
   height: auto;
   border-radius: 1.5rem;
   margin-right: 5rem;
+
   &:hover {
     box-shadow: 1rem 1rem 3rem var(--color-blue-200);
     transition: background-color 0.3s ease-in-out;

@@ -53,6 +53,20 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const StyledProfilePhoto = styled.img`
+  border-radius: 50%;
+  border: 8px solid var(--color-pink-300);
+  width: 320px;
+  height: 320px;
+  margin-left: 5rem;
+  margin-top: 8rem;
+  align-items: center;
+
+  @media (max-width: 1240px) {
+    display: none;
+  }
+`;
+
 function AboutMe() {
   const [curTime, setCurTime] = useState(new Date());
 
@@ -76,8 +90,8 @@ function AboutMe() {
   }
 
   return (
-    <>
-      <TextContainer fontSize="2rem">
+    <TextContainer direction="row" fontSize="2rem">
+      <div>
         <Heading as="h1">{greeting}.</Heading>
         <p>
           Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on
@@ -85,22 +99,18 @@ function AboutMe() {
           <strong> machine learning</strong> projects. I'm eager to contribute
           my passion and skills to real-world projects.
         </p>
-        <StyledLink to="/contactMe">Learn more about me.</StyledLink>
-
+        <StyledLink to="/contactMe">Learn more about me.</StyledLink>{" "}
         <StyledSkillsContainer>
           <Heading as="h2">My Skill Bucket</Heading>
           <SkillIcons skillsData={skillsData} />
         </StyledSkillsContainer>
+      </div>
 
-        {/* <StyledSkillsContainer>
-          <Heading as="h2">Contact Me</Heading>
-          <p>
-            Please contact me by email: LYJ10000H@gmail.com. I can start working
-            from <strong>Jan. 2023</strong>
-          </p>
-        </StyledSkillsContainer> */}
-      </TextContainer>
-    </>
+      <StyledProfilePhoto
+        src="src/assets/profilePhoto.jpg"
+        alt="profile_photo"
+      />
+    </TextContainer>
   );
 }
 
