@@ -6,9 +6,9 @@ import TechStack from "./TechStack";
 
 const ProjectsListContainer = styled.ul`
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: column;
-  margin-top: 8rem;
+  margin-top: 5rem;
   gap: 10rem;
   padding: 0 16px;
   transition: margin-top 0.3s;
@@ -106,7 +106,7 @@ function ProjectsList() {
   );
 
   return (
-    <ProjectsListContainer>
+    <ProjectsListContainer direction="column" maxWidth="120rem">
       {filteredProjects.map((project) => (
         <Link to={`/projects${project.link}`} key={project.name}>
           <ProjectListItem key={project.name}>
