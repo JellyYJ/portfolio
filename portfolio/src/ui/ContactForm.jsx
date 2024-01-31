@@ -37,7 +37,7 @@ const StyledInput = styled.input`
   background-color: var(--color-brown-50);
 
   &:focus {
-    border-bottom-color: var(--color-brown-500);
+    border-bottom-color: var(--color-brown-900);
   }
 `;
 
@@ -51,7 +51,7 @@ const StyledTextarea = styled.textarea`
   background-color: var(--color-brown-50);
 
   &:focus {
-    border-bottom-color: var(--color-brown-700);
+    border-bottom-color: var(--color-brown-900);
   }
 `;
 
