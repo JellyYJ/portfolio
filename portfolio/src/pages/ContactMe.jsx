@@ -11,7 +11,7 @@ const Container = styled.div`
   gap: 5rem;
   border-radius: 20px;
 
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
 
   @media (max-width: 1024px) {
     transition: all 0.3s;

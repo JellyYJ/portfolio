@@ -34,7 +34,7 @@ const StyledInput = styled.input`
   border: transparent;
   border-bottom: 1px solid var(--color-brown-200);
   box-sizing: border-box;
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
 
   &:focus {
     border-bottom-color: var(--color-brown-500);
@@ -48,7 +48,7 @@ const StyledTextarea = styled.textarea`
   border-bottom: 1px solid var(--color-brown-200);
   resize: vertical;
   box-sizing: border-box;
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
 
   &:focus {
     border-bottom-color: var(--color-brown-700);

@@ -2,81 +2,80 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    /* Brown */
-    --color-brown-0: #f5f5f5;
-    --color-brown-50: #ececec;
-    --color-brown-100: #cfcfcf;
-    --color-brown-200: #b2aeab;
-    --color-brown-300: #968d84;
-    --color-brown-400: #817466;
-    --color-brown-500: #6d5d4a;
-    --color-brown-600: #625343;
-    --color-brown-700: #53463a;
-    --color-brown-800: #453a30;
-    --color-brown-900: #362c25;
+    /* Soft Brown */
+    --color-brown-0: #f9f5f5;
+    --color-brown-50: #fcecec;
+    --color-brown-100: #f2dada;
+    --color-brown-200: #ebc6c4;
+    --color-brown-300: #dfb5b1;
+    --color-brown-400: #d4a19f;
+    --color-brown-500: #c88d8b;
+    --color-brown-600: #ba7f7d;
+    --color-brown-700: #a96f6d;
+    --color-brown-800: #995b59;
+    --color-brown-900: #8a4d4b;
 
+    /* Soft Grey */
+    --color-grey-0: #f9f9f9;
+    --color-grey-50: #f5f5f5;
+    --color-grey-100: #e1e1e1;
+    --color-grey-200: #d0d0d0;
+    --color-grey-300: #bcbcbc;
+    --color-grey-400: #a8a8a8;
+    --color-grey-500: #959595;
+    --color-grey-600: #818181;
+    --color-grey-700: #6e6e6e;
+    --color-grey-800: #545454;
+    --color-grey-900: #464646;
 
-    /* Grey */
-    --color-grey-0: #fff;
-    --color-grey-50: #eff0f0;
-    --color-grey-100: #d5dadd;
-    --color-grey-200: #b9c1c9;
-    --color-grey-300: #9ba8b4;
-    --color-grey-400: #8595a3;
-    --color-grey-500: #6f8293;
-    --color-grey-600: #627381;
-    --color-grey-700: #515f6b;
-    --color-grey-800: ##373833;
-    --color-grey-900: #30373d;
-  
+    /* Soft Blue */
+    --color-blue-0: #f9f9f9;
+    --color-blue-50: #e9f0f7;
+    --color-blue-100: #d2e6f3;
+    --color-blue-200: #b6d8ee;
+    --color-blue-300: #9ac7e9;
+    --color-blue-400: #80b8e6;
+    --color-blue-500: #6ba7e1;
+    --color-blue-600: #5b98d4;
+    --color-blue-700: #4f87c2;
+    --color-blue-800: #4377b0;
+    --color-blue-900: #335a8f;
 
-    /* Blue */
-    --color-blue-0: #fff;
-    --color-blue-50: #e3f0f9;
-    --color-blue-100: #bbdaf1;
-    --color-blue-200: #92c4e8;
-    --color-blue-300: #6badde;
-    --color-blue-400: #509cd9 ;
-    --color-blue-500: #398dd3;
-    --color-blue-600: #3280c6;
-    --color-blue-700: #2a6fb4;
-    --color-blue-800: #235ea2;
-    --color-blue-900: #174283;
+    /* Other Soft Colors */
+    --color-green-100: #d9f3df;
+    --color-green-700: #6fb377;
+    --color-yellow-100: #fff9e2;
+    --color-yellow-700: #e0b656;
+    --color-silver-100: #edeff2;
+    --color-silver-700: #8b99a8;
+    --color-indigo-100: #d5dcff;
+    --color-indigo-700: #7f8ff5;
 
+    --color-pink-100: #fcd7d7;
+    --color-pink-200: #f9aac8;
+    --color-pink-300: #f276a2;
+    --color-pink-700: #f0467e;
+    --color-orange-700: #ff9e4a;
+    --color-red-700: #fa5a5a;
+    --color-red-800: #e94444;
 
-    --color-green-100: #dcfce7;
-    --color-green-700: #15803d;
-    --color-yellow-100: #fef9c3;
-    --color-yellow-700: #a16207;
-    --color-silver-100: #e5e7eb;
-    --color-silver-700: #374151;
-    --color-indigo-100: #e0e7ff;
-    --color-indigo-700: #4338ca;
-  
-    --color-pink-100: #fee2e2;
-    --color-pink-200: #f7b8d6;
-    --color-pink-300: #f1549e;
-    --color-pink-700:#ef006f;
-    --color-orange-700:#ff8d00;
-    --color-red-700: #b91c1c;
-    --color-red-800: #991b1b;
-  
     --backdrop-color: rgba(255, 255, 255, 0.1);
-  
+
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
     --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
-  
+
     --border-radius-tiny: 3px;
     --border-radius-sm: 5px;
     --border-radius-md: 7px;
     --border-radius-lg: 9px;
-  
+
     /* For dark mode */
     --image-grayscale: 0;
     --image-opacity: 100%;
   }
-  
+
+
   *,
   *::before,
   *::after {
@@ -93,7 +92,8 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'Quicksand', sans-serif;
     color: var(--color-grey-700);
   
     transition: color 0.3s, background-color 0.3s;

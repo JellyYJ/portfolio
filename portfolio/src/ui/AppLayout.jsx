@@ -12,7 +12,7 @@ const StyledAppLayout = styled.div`
 
 const Main = styled.main`
   position: relative;
-  background-color: var(--color-brown-50);
+  background-color: var(--color-grey-0);
   padding: 5rem 6rem 8rem;
 `;
 
@@ -40,7 +40,7 @@ const BackgroundShape = styled.div`
   height: 100%;
   background: radial-gradient(
       circle at 0% 100%,
-      var(--color-blue-700),
+      var(--color-blue-300),
       transparent 30%
     ),
     radial-gradient(circle at 30% 120%, var(--color-pink-300), transparent 30%);

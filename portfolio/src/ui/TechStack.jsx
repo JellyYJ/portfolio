@@ -8,7 +8,7 @@ const TechContainer = styled.div`
 `;
 
 const TechItem = styled.span`
-  background-color: var(--color-brown-100);
+  background-color: var(--color-brown-50);
   padding: 0.5rem;
   border-radius: 8px;
 `;

@@ -25,7 +25,7 @@ const ProjectImage = styled.img`
   margin-right: 5rem;
 
   &:hover {
-    box-shadow: 1rem 1rem 3rem var(--color-blue-200);
+    box-shadow: 1rem 1rem 3rem var(--color-brown-100);
     transition: background-color 0.3s ease-in-out;
   }
 
@@ -50,7 +50,7 @@ const ProjectListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--color-brown-50);
+  background-color: var(--color-grey-0);
 
   &:hover {
     ${ProjectImage} {
@@ -68,12 +68,8 @@ const ProjectListItem = styled.li`
         bottom: 5px;
         /* left: 0; */
         width: 0;
-        height: 1.5px;
-        background: linear-gradient(
-          to right,
-          var(--color-grey-700),
-          transparent
-        );
+        height: 2px;
+        background: linear-gradient(var(--color-grey-700), transparent);
         transition: width 0.3s ease-in-out;
       }
 
