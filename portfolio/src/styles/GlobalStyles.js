@@ -73,6 +73,7 @@ const GlobalStyles = createGlobalStyle`
     /* For dark mode */
     --image-grayscale: 0;
     --image-opacity: 100%;
+
   }
 
 
@@ -92,8 +93,8 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    /* font-family: "Poppins", sans-serif; */
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Single Day", cursive; */
     color: var(--color-grey-700);
   
     transition: color 0.3s, background-color 0.3s;
