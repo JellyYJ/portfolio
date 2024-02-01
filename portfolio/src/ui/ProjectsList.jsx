@@ -24,11 +24,6 @@ const ProjectImage = styled.img`
   border-radius: 1.5rem;
   margin-right: 5rem;
 
-  &:hover {
-    box-shadow: 1rem 1rem 3rem var(--color-brown-100);
-    transition: background-color 0.3s ease-in-out;
-  }
-
   @media (max-width: 1240px) {
     width: 65rem;
   }
@@ -45,35 +40,36 @@ const ProjectImage = styled.img`
     margin-bottom: 1rem;
   }
 `;
-
 const ProjectListItem = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: var(--color-grey-0);
 
+  ${Heading} {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(var(--color-grey-700), transparent);
+      transition: width 0.3s ease-in-out;
+    }
+  }
+
   &:hover {
     ${ProjectImage} {
       transition: transform 0.3s ease-in-out;
+      box-shadow: 1rem 1rem 3rem var(--color-brown-100);
       transform: translateY(-10px);
     }
 
     ${Heading} {
-      position: relative;
-      overflow: hidden;
-
       &:before {
-        content: "";
-        position: absolute;
-        bottom: 5px;
-        /* left: 0; */
-        width: 0;
-        height: 2px;
-        background: linear-gradient(var(--color-grey-700), transparent);
-        transition: width 0.3s ease-in-out;
-      }
-
-      &:hover:before {
         width: 100%;
       }
     }
