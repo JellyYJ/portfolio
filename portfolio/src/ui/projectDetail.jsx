@@ -19,7 +19,7 @@ const PageContainer = styled.div`
 
 const GifsSectionTitle = styled(Heading)`
   font-size: 2.5rem;
-  /* margin-bottom: 10px; */
+  margin-top: 3rem;
   margin-right: auto;
 `;
 
@@ -27,14 +27,18 @@ const GifsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-
-  /* @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  } */
 `;
 
-const AdditionalInfo = styled(StyledDiv)`
-  /* font-size: 1.2rem; */
+const InfoContainer = styled.div`
+  background-color: var(--color-grey-100);
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+  font-size: 1.5rem;
 `;
 
 function ProjectDetail({ project }) {
@@ -60,6 +64,23 @@ function ProjectDetail({ project }) {
   return (
     <PageContainer>
       <ProjectDetailsHeader project={project} moveBack={moveBack} />
+
+      <InfoContainer>
+        <StyledDiv>
+          <strong>Date:</strong> {project.date}
+        </StyledDiv>
+
+        {project.projectLink && (
+          <a
+            href={project.projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Website
+          </a>
+        )}
+      </InfoContainer>
+
       <StyledDiv role="paragraph">{project.details}</StyledDiv>
       <TechStack techData={project.techStck} />
 
@@ -88,12 +109,6 @@ function ProjectDetail({ project }) {
           </ul>
         </StyledDiv>
       )}
-
-      <AdditionalInfo>
-        <p>
-          <strong>Additional Information:</strong> {project.additionalInfo}
-        </p>
-      </AdditionalInfo>
     </PageContainer>
   );
 }

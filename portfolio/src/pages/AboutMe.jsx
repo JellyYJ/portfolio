@@ -13,6 +13,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import TextContainer from "../ui/TextContainer";
+import StyledDiv from "../ui/Paragraph";
 
 const iconSize = 36;
 
@@ -34,11 +35,6 @@ const skillsData = [
     color: "#3776AB",
   },
 ];
-
-const StyledSkillsContainer = styled(TextContainer)`
-  max-width: 65rem;
-  margin-top: 5rem;
-`;
 
 const StyledLink = styled(Link)`
   color: var(--color-blue-500);
@@ -96,10 +92,10 @@ function AboutMe() {
           my passion and skills to real-world projects.
         </p>
         <StyledLink to="/contactMe">Contact Me right now.</StyledLink>{" "}
-        <StyledSkillsContainer>
+        <StyledDiv role="skillBucket">
           <Heading as="h2">My Skill Bucket</Heading>
           <SkillIcons skillsData={skillsData} />
-        </StyledSkillsContainer>
+        </StyledDiv>
       </div>
 
       <StyledProfilePhoto
