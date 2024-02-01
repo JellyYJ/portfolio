@@ -109,11 +109,24 @@
   },
   {
     "name": "Heartbeat Classification",
-    "img": "/src/assets/classyWeather.png",
+    "date": "Jun - Sept 2023",
+    "img": "/src/assets/heartbeat/model.png",
     "link": "/heartbeatClassification",
-    "summary": "",
+    "summary": "This is my dissertation project aiming to automatically classify the heatbeat using 12-lead ECG (electrocardiogram) data.",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
-    "details": ""
+    "details": "This project uses deep learning method to automatically detect the differences laying within ECG recordings, and therefore classifying the heartbeat into 6 categories. The core objectives encompass data preparation, model construction and comprehensive performance evaluation.",
+    "gifs": [
+      {
+        "gif": "/src/assets/pizza/order.gif",
+        "gifTitle": "Order Walkthrough",
+        "explanation": "The user can view and order the pizza. The express delivery can be selected when placing the order, or when viewing the summary of the order."
+      },
+      {
+        "gif": "/src/assets/pizza/search.gif",
+        "gifTitle": "Search for an Order",
+        "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
+      }
+    ]
   },
   {
     "name": "Step Counter",
@@ -122,6 +135,15 @@
     "type": "mini",
     "summary": "",
     "techStck": ["Java"],
+    "details": ""
+  },
+  {
+    "name": "Classy Weather",
+    "img": "/src/assets/classyWeather.png",
+    "link": "/classyWeather",
+    "type": "mini",
+    "summary": "",
+    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
     "details": ""
   },
   {

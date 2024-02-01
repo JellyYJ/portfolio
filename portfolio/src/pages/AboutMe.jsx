@@ -47,7 +47,7 @@ const StyledLink = styled(Link)`
 
 const StyledProfilePhoto = styled.img`
   border-radius: 50%;
-  border: 8px solid var(--color-pink-300);
+  border: 8px solid var(--color-pink-200);
   width: 320px;
   height: 320px;
   margin-left: 5rem;
