@@ -9,9 +9,9 @@ const CollapseDiv = styled.div`
   padding: 1rem;
   border: 1px solid var(--color-brown-50);
   position: absolute;
-  top: 8rem;
+  top: 7rem;
   /* left: 3rem; */
-  z-index: 1;
+  z-index: 2;
   display: ${({ isCollapse }) => (isCollapse ? "block" : "none")};
 `;
 
@@ -23,7 +23,7 @@ const ToggleButton = styled.button`
   border: none;
   cursor: pointer;
   position: absolute;
-  /* z-index: 2; */
+  z-index: 2;
 `;
 
 function CollpaseMainNav({ navData }) {
