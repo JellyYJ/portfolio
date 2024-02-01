@@ -12,6 +12,7 @@ const ProjectsListContainer = styled.ul`
   gap: 10rem;
   padding: 0 16px;
   transition: margin-top 0.3s;
+  margin-bottom: 5rem;
 
   @media (max-width: 1240px) {
     margin-top: 3rem;
