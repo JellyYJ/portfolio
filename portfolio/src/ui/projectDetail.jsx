@@ -6,7 +6,7 @@ import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
 import Popup from "./Popup";
 import ProjectDetailsHeader from "./ProjectDetailsHeader";
-import ProjectShowcase from "./ProjectShowcase";
+import Details from "./Details";
 
 import { useMoveBack } from "../hooks/useMoveBack";
 
@@ -14,18 +14,6 @@ const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3rem;
-`;
-
-const GifsSectionTitle = styled(Heading)`
-  font-size: 2.5rem;
-  margin-top: 3rem;
-  margin-right: auto;
-`;
-
-const GifsContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 3rem;
 `;
 
@@ -39,6 +27,18 @@ const InfoContainer = styled.div`
   gap: 3rem;
 
   font-size: 1.5rem;
+`;
+
+const DetailsHeading = styled(Heading)`
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-right: auto;
+`;
+
+const DetailsList = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 `;
 
 function ProjectDetail({ project }) {
@@ -84,31 +84,20 @@ function ProjectDetail({ project }) {
       <StyledDiv role="paragraph">{project.details}</StyledDiv>
       <TechStack techData={project.techStck} />
 
-      <GifsSectionTitle as="h3">Project Details</GifsSectionTitle>
-      <GifsContainer>
+      <DetailsHeading as="h3">Project Details</DetailsHeading>
+      <DetailsList>
         {project.gifs?.map((gifInfo, index) => (
-          <ProjectShowcase
+          <Details
             key={index}
             gifInfo={{ ...gifInfo, index }}
             openModal={openModal}
           />
         ))}
-      </GifsContainer>
+      </DetailsList>
 
       <Popup isOpen={modalOpen} onClose={closeModal}>
         {selectedGif && <img src={selectedGif} alt={selectedGif.gifTitle} />}
       </Popup>
-
-      {project.features && (
-        <StyledDiv>
-          <Heading as="h4">Key Features</Heading>
-          <ul>
-            {project.features.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
-          </ul>
-        </StyledDiv>
-      )}
     </PageContainer>
   );
 }

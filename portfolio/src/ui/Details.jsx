@@ -33,8 +33,14 @@ const GifImage = styled.img`
 
 const ExplanationContainer = styled.div`
   max-width: 100%;
+  margin: 0;
   /* margin: auto; */
   /* text-align: left; */
+
+  /* @media (min-width: 1240px) {
+    margin-right: 8rem;
+    margin-left: 2rem;
+  } */
 `;
 
 const GifTitle = styled.div`
@@ -48,9 +54,8 @@ const ExplanationText = styled.p`
   line-height: 1.4;
 `;
 
-function ProjectShowcase({ gifInfo, openModal }) {
+function Details({ gifInfo, openModal }) {
   return (
-    // <GifsContainer>
     <GifContainer
       // reverse={String(gifInfo.index % 2 === 1)}
       reverse={gifInfo?.index % 2 === 1}
@@ -62,8 +67,7 @@ function ProjectShowcase({ gifInfo, openModal }) {
         <ExplanationText>{gifInfo.explanation}</ExplanationText>
       </ExplanationContainer>
     </GifContainer>
-    // </GifsContainer>
   );
 }
 
-export default ProjectShowcase;
+export default Details;
