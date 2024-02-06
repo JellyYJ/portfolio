@@ -1,32 +1,5 @@
 [
   {
-    "name": "Solar Offset",
-    "date": "Feb - May 2023",
-    "img": "/src/assets/solarOffset/solarLandingPage.png",
-    "link": "/solarOffset",
-    "summary": "Solar Offset is a university project, with the aim of creating a platform allowing UK residents to contribute to solar panel installations in African countries, thereby offsetting household carbon emissions.",
-    "techStck": ["React", "Node.jS", "MongoDB", "Ant-Design"],
-    "details": "This university team project involved using technologies such as React and Ant-design for front-end development, Node.js for back-end processes, and MongoDB for database management. The project also involves API integration. The focus was on practical application, collaborative development, and problem-solving which gives me an understanding of the full-stack web development lifecycle.",
-    "gifs": [
-      {
-        "gif": "/src/assets/solarOffset/solarPay.gif",
-        "gifTitle": "Checkout Walkthrough",
-        "tech": "Strip API",
-        "explanation": "The application allows registered and non-registered user to select and pay for the solar plan of their choices."
-      },
-      {
-        "gif": "/src/assets/solarOffset/solarUserDashboard.gif",
-        "gifTitle": "Dashboard of a Registered User",
-        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
-      },
-      {
-        "gif": "/src/assets/solarOffset/solarCalculator.gif",
-        "gifTitle": "Embedded Footprint Calculator",
-        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
-      }
-    ]
-  },
-  {
     "name": "The Wild Oasis",
     "date": "Nov - Dec 2023",
     "img": "/src/assets/wildOasis/wildOasis.png",
@@ -48,6 +21,33 @@
       },
       {
         "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
+        "gifTitle": "Embedded Footprint Calculator",
+        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
+      }
+    ]
+  },
+  {
+    "name": "Solar Offset",
+    "date": "Feb - May 2023",
+    "img": "/src/assets/solarOffset/solarLandingPage.png",
+    "link": "/solarOffset",
+    "summary": "Solar Offset is a university project, with the aim of creating a platform allowing UK residents to contribute to solar panel installations in African countries, thereby offsetting household carbon emissions.",
+    "techStck": ["React", "Node.jS", "MongoDB", "Ant-Design"],
+    "details": "This university team project involved using technologies such as React and Ant-design for front-end development, Node.js for back-end processes, and MongoDB for database management. The project also involves API integration. The focus was on practical application, collaborative development, and problem-solving which gives me an understanding of the full-stack web development lifecycle.",
+    "gifs": [
+      {
+        "gif": "/src/assets/solarOffset/solarPay.gif",
+        "gifTitle": "Checkout Walkthrough",
+        "tech": "Strip API",
+        "explanation": "The application allows registered and non-registered user to select and pay for the solar plan of their choices."
+      },
+      {
+        "gif": "/src/assets/solarOffset/solarUserDashboard.gif",
+        "gifTitle": "Dashboard of a Registered User",
+        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+      },
+      {
+        "gif": "/src/assets/solarOffset/solarCalculator.gif",
         "gifTitle": "Embedded Footprint Calculator",
         "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
       }
@@ -117,12 +117,22 @@
     "details": "This project uses deep learning method to automatically detect the differences laying within ECG recordings, and therefore classifying the heartbeat into 6 categories. The core objectives encompass data preparation, model construction and comprehensive performance evaluation.",
     "gifs": [
       {
-        "gif": "/src/assets/pizza/order.gif",
-        "gifTitle": "Order Walkthrough",
+        "gif": "/src/assets/heartbeat/intro.png",
+        "gifTitle": "",
         "explanation": "The user can view and order the pizza. The express delivery can be selected when placing the order, or when viewing the summary of the order."
       },
       {
-        "gif": "/src/assets/pizza/search.gif",
+        "gif": "/src/assets/heartbeat/steps.png",
+        "gifTitle": "Search for an Order",
+        "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
+      },
+      {
+        "gif": "/src/assets/heartbeat/model_white.png",
+        "gifTitle": "Search for an Order",
+        "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
+      },
+      {
+        "gif": "/src/assets/heartbeat/result.png",
         "gifTitle": "Search for an Order",
         "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
       }
