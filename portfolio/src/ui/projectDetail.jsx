@@ -6,7 +6,7 @@ import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
 import Popup from "./Popup";
 import ProjectDetailsHeader from "./ProjectDetailsHeader";
-import Details from "./Details";
+import Details from "./ProjectDetailsContainer";
 
 import { useMoveBack } from "../hooks/useMoveBack";
 
@@ -67,16 +67,22 @@ function ProjectDetail({ project }) {
 
       <InfoContainer>
         <StyledDiv>
-          <strong>Date:</strong> {project.date}
+          <strong>Date:</strong> {project?.date}
         </StyledDiv>
 
-        {project.projectLink && (
+        {project?.projectLink && (
           <a
             href={project.projectLink}
             target="_blank"
             rel="noopener noreferrer"
           >
             View Website
+          </a>
+        )}
+
+        {project?.repo && (
+          <a href={project.repo} target="_blank" rel="noopener noreferrer">
+            Source Code
           </a>
         )}
       </InfoContainer>

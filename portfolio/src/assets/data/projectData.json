@@ -8,6 +8,7 @@
     "techStck": ["React", "Supabase", "Styled Components"],
     "details": "The Wild Oasis is an immersive project, showcasing a real-world-like booking system for holiday cabins. Built with cutting-edge technologies, including React for responsive frontend development, Supabase for seamless database management, and Styled Components for a stylish design. The project can be further developed by implementing booking management system",
     "projectLink": "https://one-wild-oasis.netlify.app/login",
+    "repo": "",
     "gifs": [
       {
         "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
@@ -34,6 +35,7 @@
     "summary": "Solar Offset is a university project, with the aim of creating a platform allowing UK residents to contribute to solar panel installations in African countries, thereby offsetting household carbon emissions.",
     "techStck": ["React", "Node.jS", "MongoDB", "Ant-Design"],
     "details": "This university team project involved using technologies such as React and Ant-design for front-end development, Node.js for back-end processes, and MongoDB for database management. The project also involves API integration. The focus was on practical application, collaborative development, and problem-solving which gives me an understanding of the full-stack web development lifecycle.",
+    "repo": "https://github.com/JellyYJ/SolarOffset",
     "gifs": [
       {
         "gif": "/src/assets/solarOffset/solarPay.gif",
@@ -68,6 +70,7 @@
       "ServiceWorker"
     ],
     "details": "This project is designed for bird lovers to share their spottings of the bird they spotted. The user can post new birding sighings with and without Wi-fi. And all the sightings that have been viewed when the Wifi is availiable are saved in the IndexedDB for offline viewing.",
+    "repo": "",
     "gifs": [
       {
         "gif": "/src/assets/birdSighting/chat.gif",
@@ -94,6 +97,7 @@
     "summary": "This application allows users to easily browse and order pizzas online.",
     "techStck": ["React", "Redux", "Thunks", "Tailwind"],
     "details": "This project is for practicing, leveraging React Router for smooth navigation and integrating Redux with Thunks for efficient state management. Tailwind CSS was also explored for a modern web design. I also designed 'apiRestaurant' for fetching the data menu and order infomation.",
+    "repo": "https://github.com/JellyYJ/ReactBootcamp/tree/main/15-fast-react-pizza",
     "gifs": [
       {
         "gif": "/src/assets/pizza/order.gif",
@@ -115,26 +119,27 @@
     "summary": "This is my dissertation project aiming to automatically classify the heatbeat using 12-lead ECG (electrocardiogram) data.",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
     "details": "This project uses deep learning method to automatically detect the differences laying within ECG recordings, and therefore classifying the heartbeat into 6 categories. The core objectives encompass data preparation, model construction and comprehensive performance evaluation.",
+    "repo": "https://github.com/JellyYJ/ECG-classification",
     "gifs": [
       {
         "gif": "/src/assets/heartbeat/intro.png",
-        "gifTitle": "",
-        "explanation": "The user can view and order the pizza. The express delivery can be selected when placing the order, or when viewing the summary of the order."
+        "gifTitle": "Introducation",
+        "explanation": "The project is using a large-scale ECG database to classify normal heartbeat, and 5 different Cardiovascular diseases affected heartbeat."
       },
       {
         "gif": "/src/assets/heartbeat/steps.png",
-        "gifTitle": "Search for an Order",
-        "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
+        "gifTitle": "Methodologies",
+        "explanation": "The main steps involved are preprocessing the data, construsting and experimenting with the models, train the models and finally evaluate the models. The augementation was particularly important, since the original data was highly imbalanced."
       },
       {
         "gif": "/src/assets/heartbeat/model_white.png",
-        "gifTitle": "Search for an Order",
-        "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
+        "gifTitle": "Modelling",
+        "explanation": "The final models are two dimensional Convolutional neuron netword(CNN), and 1D residual Network. For each model I experimented with different depth and different shap of data to seek the best results."
       },
       {
         "gif": "/src/assets/heartbeat/result.png",
-        "gifTitle": "Search for an Order",
-        "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
+        "gifTitle": "Results",
+        "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
       }
     ]
   },
@@ -145,7 +150,8 @@
     "type": "mini",
     "summary": "",
     "techStck": ["Java"],
-    "details": ""
+    "details": "",
+    "repo": ""
   },
   {
     "name": "Classy Weather",
@@ -154,7 +160,8 @@
     "type": "mini",
     "summary": "",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
-    "details": ""
+    "details": "",
+    "repo": ""
   },
   {
     "name": "Classy Weather",
@@ -163,6 +170,7 @@
     "type": "mini",
     "summary": "",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "repo": "",
     "details": ""
   }
 ]
