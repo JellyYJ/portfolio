@@ -6,7 +6,7 @@ const StyledNavLink = styled(NavLink)`
   &:visited {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    /* gap: 1.2rem; */
     background: linear-gradient(var(--color-grey-400), var(--color-grey-400))
       bottom / 0 0.1em no-repeat;
     transition: all 0.3s;

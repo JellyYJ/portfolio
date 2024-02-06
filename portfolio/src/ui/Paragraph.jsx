@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const StyledDiv = styled.div`
-  max-width: 70rem;
+  max-width: 65rem;
   color: var(--color-grey-800);
   /* margin: auto; */
 
