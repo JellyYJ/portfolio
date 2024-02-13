@@ -70,7 +70,7 @@
       "ServiceWorker"
     ],
     "details": "This project is designed for bird lovers to share their spottings of the bird they spotted. The user can post new birding sighings with and without Wi-fi. And all the sightings that have been viewed when the Wifi is availiable are saved in the IndexedDB for offline viewing.",
-    "repo": "",
+    "repo": "https://github.com/JellyYJ/BirdSighting",
     "gifs": [
       {
         "gif": "/src/assets/birdSighting/chat.gif",
@@ -144,19 +144,40 @@
     ]
   },
   {
+    "name": "Natours",
+    "img": "/src/assets/Natours/landing.png",
+    "summary": "",
+    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "repo": "",
+    "details": "",
+    "status": "Ongoing",
+    "gifs": [
+      {
+        "gif": "/src/assets/classyWeather.png",
+        "gifTitle": "Natours",
+        "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
+      }
+    ]
+  },
+  {
     "name": "Step Counter",
     "img": "/src/assets/classyWeather.png",
-    "link": "/stepCounter",
     "type": "mini",
     "summary": "",
     "techStck": ["Java"],
     "details": "",
-    "repo": ""
+    "repo": "",
+    "gifs": [
+      {
+        "gif": "/src/assets/pizza/search.gif",
+        "gifTitle": "StepCoutner",
+        "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
+      }
+    ]
   },
   {
     "name": "Classy Weather",
     "img": "/src/assets/classyWeather.png",
-    "link": "/classyWeather",
     "type": "mini",
     "summary": "",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
@@ -164,9 +185,8 @@
     "repo": ""
   },
   {
-    "name": "Classy Weather",
+    "name": "Classy Weather2",
     "img": "/src/assets/classyWeather.png",
-    "link": "/classyWeather",
     "type": "mini",
     "summary": "",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
