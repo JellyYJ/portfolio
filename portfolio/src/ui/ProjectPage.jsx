@@ -25,8 +25,7 @@ const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 3rem;
-
-  font-size: 1.5rem;
+  position: relative;
 `;
 
 const DetailsHeading = styled(Heading)`
@@ -39,6 +38,22 @@ const DetailsList = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+`;
+
+const StyledLink = styled.a`
+  &:hover {
+    cursor: pointer;
+    animation: jumpUpDown 0.5s infinite alternate;
+  }
+
+  @keyframes jumpUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
 `;
 
 function ProjectDetail({ project }) {
@@ -71,19 +86,23 @@ function ProjectDetail({ project }) {
         </StyledDiv>
 
         {project?.projectLink && (
-          <a
+          <StyledLink
             href={project.projectLink}
             target="_blank"
             rel="noopener noreferrer"
           >
             View Website
-          </a>
+          </StyledLink>
         )}
 
         {project?.repo && (
-          <a href={project.repo} target="_blank" rel="noopener noreferrer">
+          <StyledLink
+            href={project.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Source Code
-          </a>
+          </StyledLink>
         )}
       </InfoContainer>
 
