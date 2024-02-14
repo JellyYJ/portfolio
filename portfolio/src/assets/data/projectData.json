@@ -150,14 +150,7 @@
     "techStck": ["Node.js", "Postman", "MongoDB", "CSS", "JavaScript"],
     "repo": "",
     "details": "",
-    "status": "Ongoing",
-    "gifs": [
-      {
-        "gif": "/src/assets/classyWeather.png",
-        "gifTitle": "Natours",
-        "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
-      }
-    ]
+    "status": "Ongoing"
   },
   {
     "name": "Step Counter",
@@ -177,19 +170,38 @@
   },
   {
     "name": "Classy Weather",
-    "img": "/src/assets/classyWeather.png",
+    "img": "/src/assets/weather/classyWeather.png",
     "type": "mini",
     "summary": "",
-    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "techStck": [
+      "JavaScript",
+      "Express.js",
+      "MongoDB",
+      "socket.io",
+      "ServiceWorker"
+    ],
     "details": "",
-    "repo": ""
+    "repo": "",
+    "gifs": [
+      {
+        "gif": "/src/assets/weather/search.gif",
+        "gifTitle": "Natours",
+        "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
+      }
+    ]
   },
   {
-    "name": "Classy Weather2",
-    "img": "/src/assets/classyWeather.png",
+    "name": "UsePopcorn",
+    "img": "/src/assets/usePopcorn.png",
     "type": "mini",
     "summary": "",
-    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "techStck": [
+      "JavaScript",
+      "Express.js",
+      "MongoDB",
+      "socket.io",
+      "ServiceWorker"
+    ],
     "repo": "",
     "details": ""
   }
