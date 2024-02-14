@@ -100,7 +100,7 @@
     "repo": "https://github.com/JellyYJ/ReactBootcamp/tree/main/15-fast-react-pizza",
     "gifs": [
       {
-        "gif": "/src/assets/pizza/order.gif",
+        "gif": "/src/assets/pizza/checkout.gif",
         "gifTitle": "Order Walkthrough",
         "explanation": "The user can view and order the pizza. The express delivery can be selected when placing the order, or when viewing the summary of the order."
       },

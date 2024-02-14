@@ -17,9 +17,14 @@ const ModalContent = styled.div`
   background-color: rgba(255, 255, 255, 1);
   padding: 20px;
   border-radius: 10px;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 75%;
+  max-height: 100%;
   overflow: auto;
+
+  @media (max-width: 1240px) {
+    max-width: 80%;
+    max-height: 80%;
+  }
 `;
 
 const Popup = ({ isOpen, onClose, children }) => {
