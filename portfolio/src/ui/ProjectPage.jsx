@@ -5,8 +5,8 @@ import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
 import Popup from "./Popup";
-import ProjectDetailsHeader from "./ProjectDetailsHeader";
-import Details from "./ProjectDetailsContainer";
+import ProjectHeader from "./ProjectHeader";
+import Details from "./ProjectDetails";
 
 import { useMoveBack } from "../hooks/useMoveBack";
 
@@ -63,7 +63,7 @@ function ProjectDetail({ project }) {
 
   return (
     <PageContainer>
-      <ProjectDetailsHeader project={project} moveBack={moveBack} />
+      <ProjectHeader project={project} moveBack={moveBack} />
 
       <InfoContainer>
         <StyledDiv>

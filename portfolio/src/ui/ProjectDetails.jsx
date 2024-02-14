@@ -54,7 +54,7 @@ const ExplanationText = styled.p`
   line-height: 1.4;
 `;
 
-function Details({ gifInfo, openModal }) {
+function ProjectDetails({ gifInfo, openModal }) {
   return (
     <GifContainer
       // reverse={String(gifInfo.index % 2 === 1)}
@@ -70,4 +70,4 @@ function Details({ gifInfo, openModal }) {
   );
 }
 
-export default Details;
+export default ProjectDetails;

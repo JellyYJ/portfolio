@@ -6,7 +6,6 @@ import TechStack from "./TechStack";
 
 const ProjectsListContainer = styled.ul`
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
   margin-top: 5rem;
   gap: 10rem;
@@ -20,6 +19,7 @@ const ProjectsListContainer = styled.ul`
 `;
 
 const ProjectImage = styled.img`
+  position: relative;
   width: 80rem;
   height: auto;
   border-radius: 1.5rem;
@@ -41,6 +41,16 @@ const ProjectImage = styled.img`
     margin-bottom: 1rem;
   }
 `;
+
+const ConstructionIcon = styled.img`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+`;
+
 const ProjectListItem = styled.li`
   display: flex;
   flex-direction: row;
@@ -101,9 +111,21 @@ function ProjectsList() {
   return (
     <ProjectsListContainer direction="column" maxWidth="120rem">
       {filteredProjects.map((project) => (
-        <Link to={`/projects${project.link}`} key={project.name}>
+        <Link
+          to={project.status === "Ongoing" ? "#" : `/projects${project.link}`}
+          key={project.name}
+          style={{
+            pointerEvents: project.status === "Ongoing" ? "none" : "auto",
+          }}
+        >
           <ProjectListItem key={project.name}>
             <ProjectImage src={project.img} alt={project.name} />
+            {project.status === "Ongoing" && (
+              <ConstructionIcon
+                src="/src/assets/construction_symbol.png"
+                alt="Under construction"
+              />
+            )}
             <ProjectDetails>
               <Heading as="h3">{project.name}</Heading>
               <ProjectDescription>{project.summary}</ProjectDescription>

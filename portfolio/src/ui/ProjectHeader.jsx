@@ -15,7 +15,7 @@ const ProjectHeaderContainer = styled.div`
   gap: 1rem;
 `;
 
-function ProjectDetailsHeader({ project, moveBack }) {
+function ProjectHeader({ project, moveBack }) {
   return (
     <ProjectHeaderContainer>
       <BackButton variation="secondary" onClick={moveBack}>
@@ -27,4 +27,4 @@ function ProjectDetailsHeader({ project, moveBack }) {
   );
 }
 
-export default ProjectDetailsHeader;
+export default ProjectHeader;
