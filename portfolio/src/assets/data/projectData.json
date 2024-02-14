@@ -18,12 +18,7 @@
       {
         "gif": "/src/assets/wildOasis/cabinOperation.gif",
         "gifTitle": "Cabin Managemnet",
-        "explanation": ""
-      },
-      {
-        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
-        "gifTitle": "Check in a Customer",
-        "explanation": ""
+        "explanation": "The logged in user can create, duplicate, edit and delete cabins."
       }
     ]
   },
