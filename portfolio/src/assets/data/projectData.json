@@ -18,12 +18,12 @@
       {
         "gif": "/src/assets/wildOasis/cabinOperation.gif",
         "gifTitle": "Cabin Managemnet",
-        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+        "explanation": ""
       },
       {
         "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
-        "gifTitle": "Embedded Footprint Calculator",
-        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
+        "gifTitle": "Check in a Customer",
+        "explanation": ""
       }
     ]
   },
@@ -73,19 +73,24 @@
     "repo": "https://github.com/JellyYJ/BirdSighting",
     "gifs": [
       {
+        "gif": "/src/assets/birdSighting/create.gif",
+        "gifTitle": "Create a New Sighting",
+        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
+      },
+      {
         "gif": "/src/assets/birdSighting/chat.gif",
         "gifTitle": "Real-Time Chat",
         "explanation": "The users can chat in real-time, the chat history will be saved in the database."
       },
       {
-        "gif": "/src/assets/birdSighting/knowledgeGraph.gif",
-        "gifTitle": "Search",
-        "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
+        "gif": "/src/assets/birdSighting/edit.gif",
+        "gifTitle": "Edit Bird Identification",
+        "explanation": "The author of the post can edit the bird identification. This can be done by manually input new infomation, or by searching the knowledge graph as shown in the GIF."
       },
       {
-        "gif": "/src/assets/birdSighting/createNew.gif",
-        "gifTitle": "Embedded Footprint Calculator",
-        "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
+        "gif": "/src/assets/birdSighting/offline.gif",
+        "gifTitle": "Offline Functions",
+        "explanation": "The application can be accessed when offline, using service worker to save the HTML pages, and indexedDB to save the data. The sightings that are viewed online are saved into the idb, and therefore can be accessed when offline. Whne the user is back online, the data will be synced to the MongoDB and persist."
       }
     ]
   },
