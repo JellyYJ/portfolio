@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import projectsData from "../assets/data/projectData.json";
 import Heading from "./Heading";
