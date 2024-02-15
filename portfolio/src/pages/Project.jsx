@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectPage from "../ui/ProjectPage";
 import { useParams } from "react-router-dom";
-import projectsData from "../assets/data/projectData.json";
+import projectsData from "../data/projectData.json";
 
 function Project() {
   const { projectName } = useParams();

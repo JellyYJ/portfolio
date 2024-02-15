@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import projectsData from "../assets/data/projectData.json";
+import projectsData from "../data/projectData.json";
 import Heading from "./Heading";
 import Popup from "./Popup";
 

@@ -2,7 +2,7 @@
   {
     "name": "The Wild Oasis",
     "date": "Nov - Dec 2023",
-    "img": "/src/assets/wildOasis/wildOasis.png",
+    "img": "../wildOasis/wildOasis.png",
     "link": "/wildOasis",
     "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
     "techStck": ["React", "Supabase", "Styled Components", "Netlify"],
@@ -11,12 +11,12 @@
     "repo": "",
     "gifs": [
       {
-        "gif": "/src/assets/wildOasis/bookingCheckIn.gif",
+        "gif": "../wildOasis/bookingCheckIn.gif",
         "gifTitle": "Booking Checkin",
         "explanation": "The user can view the details of each booking, and can also check in the booking."
       },
       {
-        "gif": "/src/assets/wildOasis/cabinOperation.gif",
+        "gif": "../wildOasis/cabinOperation.gif",
         "gifTitle": "Cabin Managemnet",
         "explanation": "The logged in user can create, duplicate, edit and delete cabins."
       }
@@ -25,7 +25,7 @@
   {
     "name": "Solar Offset",
     "date": "Feb - May 2023",
-    "img": "/src/assets/solarOffset/solarLandingPage.png",
+    "img": "../solarOffset/solarLandingPage.png",
     "link": "/solarOffset",
     "summary": "Solar Offset is a university project, with the aim of creating a platform allowing UK residents to contribute to solar panel installations in African countries, thereby offsetting household carbon emissions.",
     "techStck": ["React", "Node.jS", "MongoDB", "Ant-Design"],
@@ -33,18 +33,18 @@
     "repo": "https://github.com/JellyYJ/SolarOffset",
     "gifs": [
       {
-        "gif": "/src/assets/solarOffset/solarPay.gif",
+        "gif": "../solarOffset/solarPay.gif",
         "gifTitle": "Checkout Walkthrough",
         "tech": "Strip API",
         "explanation": "The application allows registered and non-registered user to select and pay for the solar plan of their choices."
       },
       {
-        "gif": "/src/assets/solarOffset/solarUserDashboard.gif",
+        "gif": "../solarOffset/solarUserDashboard.gif",
         "gifTitle": "Dashboard of a Registered User",
         "explanation": "The registered user can log in can check their purchase history on the dashboard, and they can change their housetype for a rough estimation of the CO2 emmission of the household."
       },
       {
-        "gif": "/src/assets/solarOffset/solarCalculator.gif",
+        "gif": "../solarOffset/solarCalculator.gif",
         "gifTitle": "Embedded Footprint Calculator",
         "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
       }
@@ -53,7 +53,7 @@
 
   {
     "name": "Bird Sighting",
-    "img": "/src/assets/birdSighting/landingPage.png",
+    "img": "../birdSighting/landingPage.png",
     "link": "/birdSighting",
     "date": "Feb - May 2023",
     "summary": "This project is for bird lovers to post their spottings of bird with and without WiFi. And they are also chat online to share their thoughts about this bird.",
@@ -68,22 +68,22 @@
     "repo": "https://github.com/JellyYJ/BirdSighting",
     "gifs": [
       {
-        "gif": "/src/assets/birdSighting/create.gif",
+        "gif": "../birdSighting/create.gif",
         "gifTitle": "Create a New Sighting",
         "explanation": "For a precise calculation of the CO2 emission of the household, the user can use the footprint calculator panel to seek the results. "
       },
       {
-        "gif": "/src/assets/birdSighting/chat.gif",
+        "gif": "../birdSighting/chat.gif",
         "gifTitle": "Real-Time Chat",
         "explanation": "The users can chat in real-time, the chat history will be saved in the database."
       },
       {
-        "gif": "/src/assets/birdSighting/edit.gif",
+        "gif": "../birdSighting/edit.gif",
         "gifTitle": "Edit Bird Identification",
         "explanation": "The author of the post can edit the bird identification. This can be done by manually input new infomation, or by searching the knowledge graph as shown in the GIF."
       },
       {
-        "gif": "/src/assets/birdSighting/offline.gif",
+        "gif": "../birdSighting/offline.gif",
         "gifTitle": "Offline Functions",
         "explanation": "The application can be accessed when offline, using service worker to save the HTML pages, and indexedDB to save the data. The sightings that are viewed online are saved into the idb, and therefore can be accessed when offline. Whne the user is back online, the data will be synced to the MongoDB and persist."
       }
@@ -91,7 +91,7 @@
   },
   {
     "name": "React Pizza.co",
-    "img": "/src/assets/pizza/pizzaCo.png",
+    "img": "../pizza/pizzaCo.png",
     "date": "June 2023",
     "link": "/reactPizza",
     "summary": "This application allows users to easily browse and order pizzas online.",
@@ -100,12 +100,12 @@
     "repo": "https://github.com/JellyYJ/ReactBootcamp/tree/main/15-fast-react-pizza",
     "gifs": [
       {
-        "gif": "/src/assets/pizza/checkout.gif",
+        "gif": "../pizza/checkout.gif",
         "gifTitle": "Order Walkthrough",
         "explanation": "The user can view and order the pizza. The express delivery can be selected when placing the order, or when viewing the summary of the order."
       },
       {
-        "gif": "/src/assets/pizza/search.gif",
+        "gif": "../pizza/search.gif",
         "gifTitle": "Search for an Order",
         "explanation": "The user can search the order in the application. If the order exsits, the infomation of the customer and the order details will be shown. If the order does not exist, the not found page would display."
       }
@@ -114,7 +114,7 @@
   {
     "name": "Heartbeat Classification",
     "date": "Jun - Sept 2023",
-    "img": "/src/assets/heartbeat/model.png",
+    "img": "../heartbeat/model.png",
     "link": "/heartbeatClassification",
     "summary": "This is my dissertation project aiming to automatically classify the heatbeat using 12-lead ECG (electrocardiogram) data.",
     "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
@@ -122,22 +122,22 @@
     "repo": "https://github.com/JellyYJ/ECG-classification",
     "gifs": [
       {
-        "gif": "/src/assets/heartbeat/intro.png",
+        "gif": "../heartbeat/intro.png",
         "gifTitle": "Introducation",
         "explanation": "The project is using a large-scale ECG database to classify normal heartbeat, and 5 different Cardiovascular diseases affected heartbeat."
       },
       {
-        "gif": "/src/assets/heartbeat/steps.png",
+        "gif": "../heartbeat/steps.png",
         "gifTitle": "Methodologies",
         "explanation": "The main steps involved are preprocessing the data, construsting and experimenting with the models, train the models and finally evaluate the models. The augementation was particularly important, since the original data was highly imbalanced."
       },
       {
-        "gif": "/src/assets/heartbeat/model_white.png",
+        "gif": "../heartbeat/model_white.png",
         "gifTitle": "Modelling",
         "explanation": "The final models are two dimensional Convolutional neuron netword(CNN), and 1D residual Network. For each model I experimented with different depth and different shap of data to seek the best results."
       },
       {
-        "gif": "/src/assets/heartbeat/result.png",
+        "gif": "../heartbeat/result.png",
         "gifTitle": "Results",
         "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
       }
@@ -145,7 +145,7 @@
   },
   {
     "name": "Natours",
-    "img": "/src/assets/Natours/landing.png",
+    "img": "../Natours/landing.png",
     "summary": "",
     "techStck": ["Node.js", "Postman", "MongoDB", "CSS", "JavaScript"],
     "repo": "",
@@ -154,7 +154,7 @@
   },
   {
     "name": "UsePopcorn",
-    "img": "/src/assets/usePopcorn/landing.png",
+    "img": "../usePopcorn/landing.png",
     "type": "mini",
     "summary": "",
     "techStck": ["JavaScript", "useEffect"],
@@ -162,7 +162,7 @@
     "details": "",
     "gifs": [
       {
-        "gif": "/src/assets/usePopcorn/searchFilm.gif",
+        "gif": "../usePopcorn/searchFilm.gif",
         "gifTitle": "Natours",
         "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
       }
@@ -170,7 +170,7 @@
   },
   {
     "name": "Classy Weather",
-    "img": "/src/assets/weather/classyWeather.png",
+    "img": "../weather/classyWeather.png",
     "type": "mini",
     "summary": "",
     "techStck": ["JavaScript", "useEffect"],
@@ -178,7 +178,7 @@
     "repo": "",
     "gifs": [
       {
-        "gif": "/src/assets/weather/search.gif",
+        "gif": "../weather/search.gif",
         "gifTitle": "Classy Weather",
         "explanation": "This project is for practicing useEffect"
       }
@@ -186,7 +186,7 @@
   },
   {
     "name": "Worldwise",
-    "img": "/src/assets/worldwise/landing.png",
+    "img": "../worldwise/landing.png",
     "type": "mini",
     "summary": "",
     "techStck": ["JavaScript", "useEffect"],
@@ -194,7 +194,7 @@
     "repo": "",
     "gifs": [
       {
-        "gif": "/src/assets/worldwise/walkthrough.gif",
+        "gif": "../worldwise/walkthrough.gif",
         "gifTitle": "Worldwise",
         "explanation": "This is a light weight project having both front-end and back-end service, focusing on practicing react router and useContext."
       }
