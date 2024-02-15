@@ -21,7 +21,7 @@ const infoData = [
   {
     icon: <MdLocationOn />,
     label: "Address",
-    value: "18 Tower House, Tower Street, Newcastle Upon Tyne",
+    value: "Newcastle Upon Tyne",
   },
   { icon: <MdPhone />, label: "Phone", value: "07529981054" },
 ];
