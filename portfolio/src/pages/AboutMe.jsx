@@ -1,17 +1,19 @@
-import { useState, useEffect } from "react";
-import Heading from "../ui/Heading";
-import SkillIcons from "../ui/SkillIcons";
-
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaJava } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import {
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaJava,
+  FaNodeJs,
+  FaPython,
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiTailwindcss } from "react-icons/si";
+
+import Heading from "../ui/Heading";
+import SkillIcons from "../ui/SkillIcons";
 import TextContainer from "../ui/TextContainer";
 import StyledDiv from "../ui/Paragraph";
 
@@ -71,15 +73,12 @@ function AboutMe() {
   }, []);
 
   const currentHour = curTime.getHours();
-  let greeting;
-
-  if (currentHour < 12) {
-    greeting = "Good Morning";
-  } else if (currentHour < 18) {
-    greeting = "Good Afternoon";
-  } else {
-    greeting = "Good Evening";
-  }
+  const greeting =
+    currentHour < 12
+      ? "Good Morning"
+      : currentHour < 18
+      ? "Good Afternoon"
+      : "Good Evening";
 
   return (
     <TextContainer direction="row" fontSize="2rem">
@@ -88,8 +87,8 @@ function AboutMe() {
         <p>
           Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on
           experience in <strong>full-stack web development</strong> and
-          <strong> machine learning</strong> projects. I'm eager to contribute
-          my passion and skills to real-world projects.
+          <strong> machine learning</strong> projects. I am looking forward to
+          starting my career as a software developer.
         </p>
         <StyledLink to="/contactMe">Contact Me right now.</StyledLink>{" "}
         <StyledDiv role="skillBucket">
