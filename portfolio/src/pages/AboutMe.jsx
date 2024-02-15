@@ -81,8 +81,8 @@ function AboutMe() {
       : "Good Evening";
 
   return (
-    <TextContainer direction="row" fontSize="2rem">
-      <div>
+    <TextContainer direction="row">
+      <TextContainer>
         <Heading as="h1">{greeting}.</Heading>
         <p>
           Hello! I'm Yijia Liu, a recent Computer Science graduate with hands-on
@@ -95,7 +95,7 @@ function AboutMe() {
           <Heading as="h2">My Skill Bucket</Heading>
           <SkillIcons skillsData={skillsData} />
         </StyledDiv>
-      </div>
+      </TextContainer>
 
       <StyledProfilePhoto
         src="src/assets/profilePhoto.jpg"

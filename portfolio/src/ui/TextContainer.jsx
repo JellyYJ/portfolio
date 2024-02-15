@@ -12,6 +12,7 @@ const direction = {
 
 const TextContainer = styled.div`
   display: flex;
+  gap: 1.5rem;
   /* margin-top: 3rem; */
   max-width: ${(props) => props.maxWidth || "100rem"};
   margin-bottom: ${(props) => props.marginBottom || "3rem"};
@@ -19,7 +20,7 @@ const TextContainer = styled.div`
   ${(props) => direction[props.direction]}
 
   p {
-    font-size: ${(props) => props.fontSize || "1rem"};
+    font-size: ${(props) => props.fontSize || "2rem"};
     margin-top: 1rem;
   }
 
