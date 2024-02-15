@@ -153,17 +153,17 @@
     "status": "Ongoing"
   },
   {
-    "name": "Step Counter",
-    "img": "/src/assets/classyWeather.png",
+    "name": "UsePopcorn",
+    "img": "/src/assets/usePopcorn/landing.png",
     "type": "mini",
     "summary": "",
-    "techStck": ["Java"],
-    "details": "",
+    "techStck": ["JavaScript", "useEffect"],
     "repo": "",
+    "details": "",
     "gifs": [
       {
-        "gif": "/src/assets/pizza/search.gif",
-        "gifTitle": "StepCoutner",
+        "gif": "/src/assets/usePopcorn/searchFilm.gif",
+        "gifTitle": "Natours",
         "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
       }
     ]
@@ -173,36 +173,31 @@
     "img": "/src/assets/weather/classyWeather.png",
     "type": "mini",
     "summary": "",
-    "techStck": [
-      "JavaScript",
-      "Express.js",
-      "MongoDB",
-      "socket.io",
-      "ServiceWorker"
-    ],
+    "techStck": ["JavaScript", "useEffect"],
     "details": "",
     "repo": "",
     "gifs": [
       {
         "gif": "/src/assets/weather/search.gif",
-        "gifTitle": "Natours",
-        "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
+        "gifTitle": "Classy Weather",
+        "explanation": "This project is for practicing useEffect"
       }
     ]
   },
   {
-    "name": "UsePopcorn",
-    "img": "/src/assets/usePopcorn.png",
+    "name": "Worldwise",
+    "img": "/src/assets/worldwise/landing.png",
     "type": "mini",
     "summary": "",
-    "techStck": [
-      "JavaScript",
-      "Express.js",
-      "MongoDB",
-      "socket.io",
-      "ServiceWorker"
-    ],
+    "techStck": ["JavaScript", "useEffect"],
+    "details": "",
     "repo": "",
-    "details": ""
+    "gifs": [
+      {
+        "gif": "/src/assets/worldwise/walkthrough.gif",
+        "gifTitle": "Worldwise",
+        "explanation": "This is a light weight project having both front-end and back-end service, focusing on practicing react router and useContext."
+      }
+    ]
   }
 ]
