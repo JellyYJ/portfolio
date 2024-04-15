@@ -23,6 +23,36 @@
     ]
   },
   {
+    "name": "Natours",
+    "img": "../natours/landing.png",
+    "date": "Feb 2023 - Apr. 2024",
+    "summary": "",
+    "link": "/natours",
+    "techStck": [
+      "Node.js",
+      "RESTful API",
+      "Postman",
+      "MongoDB",
+      "JavaScript",
+      "Railway"
+    ],
+    "projectLink": "https://nodebootcamp-production-d77c.up.railway.app/",
+    "repo": "https://github.com/JellyYJ/NodeBootcamp/tree/main/4-natours",
+    "details": "",
+    "gifs": [
+      {
+        "gif": "../wildOasis/bookingCheckIn.gif",
+        "gifTitle": "Booking Checkin",
+        "explanation": "The user can view the details of each booking, and can also check in the booking."
+      },
+      {
+        "gif": "../wildOasis/cabinOperation.gif",
+        "gifTitle": "Cabin Managemnet",
+        "explanation": "The logged in user can create, duplicate, edit and delete cabins."
+      }
+    ]
+  },
+  {
     "name": "Solar Offset",
     "date": "Feb - May 2023",
     "img": "../solarOffset/solarLandingPage.png",
@@ -142,15 +172,6 @@
         "explanation": "The final best F1-score was 83% using augmentated data with the 1D-RestNet. The results were carefully tested and evlauated."
       }
     ]
-  },
-  {
-    "name": "Natours",
-    "img": "../Natours/landing.png",
-    "summary": "",
-    "techStck": ["Node.js", "Postman", "MongoDB", "CSS", "JavaScript"],
-    "repo": "",
-    "details": "",
-    "status": "Ongoing"
   },
   {
     "name": "UsePopcorn",
