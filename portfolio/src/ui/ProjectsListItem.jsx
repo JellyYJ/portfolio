@@ -107,7 +107,7 @@ function ProjectsListItem({ project }) {
         <ProjectDetails>
           <Heading as="h3">{project.name}</Heading>
           <ProjectDescription>{project.summary}</ProjectDescription>
-          <TechStack techData={project.techStck} />
+          <TechStack techData={project.techStack} />
         </ProjectDetails>
       </ProjectListItemContainer>
     </Link>
