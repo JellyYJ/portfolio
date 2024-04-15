@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Heading from "./Heading";
 import StyledDiv from "./Paragraph";
 import TechStack from "./TechStack";
+import InstructionsList from "./InstructionsList";
 import Popup from "./Popup";
 import ProjectHeader from "./ProjectHeader";
 import Details from "./ProjectDetails";
@@ -107,7 +108,10 @@ function ProjectDetail({ project }) {
       </InfoContainer>
 
       <StyledDiv role="paragraph">{project.details}</StyledDiv>
-      <TechStack techData={project.techStck} />
+      {project.how_to_use && (
+        <InstructionsList instructions={project.how_to_use} />
+      )}
+      <TechStack techData={project.techStack} />
 
       <DetailsHeading as="h3">Project Details</DetailsHeading>
       <DetailsList>

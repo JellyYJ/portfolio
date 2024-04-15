@@ -5,10 +5,14 @@
     "img": "../wildOasis/wildOasis.png",
     "link": "/wildOasis",
     "summary": "This project is a real-world like porject intimate the inside website for a booking system for cabins.",
-    "techStck": ["React", "Supabase", "Styled Components", "Netlify"],
+    "techStack": ["React", "Supabase", "Styled Components", "Netlify"],
     "details": "The Wild Oasis is an immersive project, showcasing a real-world-like booking system for holiday cabins. Built with cutting-edge technologies, including React for responsive frontend development, Supabase for seamless database management, and Styled Components for a stylish design. The project can be further developed by implementing booking management system",
     "projectLink": "https://one-wild-oasis.netlify.app/login",
     "repo": "",
+    "how_to_use": [
+      "Log in: test@test.com password: test1234",
+      "Please upload sample data using the buttom at the bottom of the left navigation menu."
+    ],
     "gifs": [
       {
         "gif": "../wildOasis/bookingCheckIn.gif",
@@ -26,9 +30,9 @@
     "name": "Natours",
     "img": "../natours/landing.png",
     "date": "Feb 2023 - Apr. 2024",
-    "summary": "",
+    "summary": "This is an awsome API built using Node.js, Express.js framework with MongoDB to manage data",
     "link": "/natours",
-    "techStck": [
+    "techStack": [
       "Node.js",
       "RESTful API",
       "Postman",
@@ -38,17 +42,21 @@
     ],
     "projectLink": "https://nodebootcamp-production-d77c.up.railway.app/",
     "repo": "https://github.com/JellyYJ/NodeBootcamp/tree/main/4-natours",
-    "details": "",
+    "details": "This API's main function is for users to view and select a plan to purchase with Stripe API. And there are 'admin' and 'guide' roles that had distinct and share responsibilities, including managing bookings, tours, reviews, and users. Additionally, the app includes authentication and authorisation of the users. The logged in users have can view and modify their info on personal info page.",
+    "how_to_use": [
+      "Log in as admin: admin@natours.io password: test1234",
+      "Log in as user: loulolu@example.com password: test1234"
+    ],
     "gifs": [
       {
-        "gif": "../wildOasis/bookingCheckIn.gif",
-        "gifTitle": "Booking Checkin",
-        "explanation": "The user can view the details of each booking, and can also check in the booking."
+        "gif": "../natours/walkthrough.gif",
+        "gifTitle": "System Walkthrough",
+        "explanation": "The logged in user can browse the tours and select a plan to purchase."
       },
       {
-        "gif": "../wildOasis/cabinOperation.gif",
-        "gifTitle": "Cabin Managemnet",
-        "explanation": "The logged in user can create, duplicate, edit and delete cabins."
+        "gif": "../natours/changeUserInfo.gif",
+        "gifTitle": "Change User Info",
+        "explanation": "The user can view and change the personal infomation in the account page. The password can be changed as well."
       }
     ]
   },
@@ -58,7 +66,7 @@
     "img": "../solarOffset/solarLandingPage.png",
     "link": "/solarOffset",
     "summary": "Solar Offset is a university project, with the aim of creating a platform allowing UK residents to contribute to solar panel installations in African countries, thereby offsetting household carbon emissions.",
-    "techStck": ["React", "Node.jS", "MongoDB", "Ant-Design"],
+    "techStack": ["React", "Node.jS", "MongoDB", "Ant-Design"],
     "details": "This university team project involved using technologies such as React and Ant-design for front-end development, Node.js for back-end processes, and MongoDB for database management. The project also involves API integration. The focus was on practical application, collaborative development, and problem-solving which gives me an understanding of the full-stack web development lifecycle.",
     "repo": "https://github.com/JellyYJ/SolarOffset",
     "gifs": [
@@ -87,7 +95,7 @@
     "link": "/birdSighting",
     "date": "Feb - May 2023",
     "summary": "This project is for bird lovers to post their spottings of bird with and without WiFi. And they are also chat online to share their thoughts about this bird.",
-    "techStck": [
+    "techStack": [
       "JavaScript",
       "Express.js",
       "MongoDB",
@@ -125,7 +133,7 @@
     "date": "June 2023",
     "link": "/reactPizza",
     "summary": "This application allows users to easily browse and order pizzas online.",
-    "techStck": ["React", "Redux", "Thunks", "Tailwind"],
+    "techStack": ["React", "Redux", "Thunks", "Tailwind"],
     "details": "This project is for practicing, leveraging React Router for smooth navigation and integrating Redux with Thunks for efficient state management. Tailwind CSS was also explored for a modern web design. I also designed 'apiRestaurant' for fetching the data menu and order infomation.",
     "repo": "https://github.com/JellyYJ/ReactBootcamp/tree/main/15-fast-react-pizza",
     "gifs": [
@@ -147,7 +155,7 @@
     "img": "../heartbeat/model.png",
     "link": "/heartbeatClassification",
     "summary": "This is my dissertation project aiming to automatically classify the heatbeat using 12-lead ECG (electrocardiogram) data.",
-    "techStck": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
+    "techStack": ["Python", "Numpy", "Matplotlib", "PyTorch", "TensorFlow"],
     "details": "This project uses deep learning method to automatically detect the differences laying within ECG recordings, and therefore classifying the heartbeat into 6 categories. The core objectives encompass data preparation, model construction and comprehensive performance evaluation.",
     "repo": "https://github.com/JellyYJ/ECG-classification",
     "gifs": [
@@ -178,7 +186,7 @@
     "img": "../usePopcorn/landing.png",
     "type": "mini",
     "summary": "",
-    "techStck": ["JavaScript", "useEffect"],
+    "techStack": ["JavaScript", "useEffect"],
     "repo": "",
     "details": "",
     "gifs": [
@@ -194,7 +202,7 @@
     "img": "../weather/classyWeather.png",
     "type": "mini",
     "summary": "",
-    "techStck": ["JavaScript", "useEffect"],
+    "techStack": ["JavaScript", "useEffect"],
     "details": "",
     "repo": "",
     "gifs": [
@@ -210,7 +218,7 @@
     "img": "../worldwise/landing.png",
     "type": "mini",
     "summary": "",
-    "techStck": ["JavaScript", "useEffect"],
+    "techStack": ["JavaScript", "useEffect"],
     "details": "",
     "repo": "",
     "gifs": [
