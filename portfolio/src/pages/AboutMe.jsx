@@ -97,10 +97,7 @@ function AboutMe() {
         </StyledDiv>
       </TextContainer>
 
-      <StyledProfilePhoto
-        src="src/assets/profilePhoto.jpg"
-        alt="profile_photo"
-      />
+      <StyledProfilePhoto src="../profilePhoto.jpg" alt="profile_photo" />
     </TextContainer>
   );
 }

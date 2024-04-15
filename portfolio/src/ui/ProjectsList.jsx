@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import projectsData from "../assets/data/projectData.json";
+import projectsData from "../data/projectData.json";
 import ProjectsListItem from "./ProjectsListItem";
 
 const ProjectsListContainer = styled.ul`
